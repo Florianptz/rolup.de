@@ -382,6 +382,7 @@ header{
   /* style */
   border: none;
   border-bottom: 2px solid #A2A2A2;
+  background-color: transparent;
   /* text */
   text-align: left;
   font-size: 20px;
@@ -442,6 +443,8 @@ header{
   /* style */
   border: 2px solid #A2A2A2;
   border-radius: 2px;
+  background-color: transparent;
+  transition: none;
   /* text */
   text-align: left;
   font-size: 16px;
@@ -478,12 +481,12 @@ header{
 }
 .fa-paper-plane{
   /* style */
-  color: var(--background-clr);
+  color: #ffffff;
 }
 
 footer{
   /* sizing */
-  height: 400px;
+  height: 350px;
   /* style */
   background-color: var(--secondarybg-clr);
   /* content alignment */
