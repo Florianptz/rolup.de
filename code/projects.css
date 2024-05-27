@@ -49,7 +49,7 @@ header{
   background-color: var(--background-clr);
   box-shadow: var(--boxshadow-header);
   /* positioning */
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -97,6 +97,31 @@ header{
 #darklightmodeiconsvg:hover{
   background-color: var(--cardsbg-clr);
   cursor: pointer;
+}
+
+.project{
+  /* sizing */
+  width: 90%;
+  height: 530px;
+  /* content alignment */
+  display: flex;
+  justify-content: space-between;
+  /* positioning */
+  margin: 50px auto 70px auto;
+}
+.companycard{
+  /* sizing */
+  width: 30%;
+  height: 100%;
+  border-radius: 35px;
+  /* style */
+  background-color: var(--cardsbg-clr);
+}
+.projectpictures{
+  /* sizing */
+  width: 65%;
+  height: 100%;
+  border-radius: 35px;
 }
 
 footer{
