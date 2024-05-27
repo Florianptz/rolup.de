@@ -44,7 +44,7 @@ header{
   background-color: var(--background-clr);
   box-shadow: var(--boxshadow-header);
   /* positioning */
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -99,7 +99,7 @@ header{
   width: 90%;
   height: fit-content;
   /* positioning */
-  margin: 150px auto 0px auto;
+  margin: 70px auto 0px auto;
   /* content alignment */
   display: flex;
   justify-content: space-between;
