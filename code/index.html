@@ -6,105 +6,153 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>rolup</title>
+  <script src="https://kit.fontawesome.com/28a968a5bb.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
     <div class="headerframe">
-      <img src="" alt="">
+      <a href="../code/index.html"><img src="../assets/RolupLogoblack.svg" alt="" id="headerlogo"></a>
       <div class="headerlinksandicon">
         <div class="headerlinks">
-          <a href=""><p></p></a>
-          <a href=""><p></p></a>
-          <a href=""><p></p></a>
+          <a href="../code/projects.html">Projekte</a>
+          <a href="">Services</a>
+          <a href="../code/about.html">Über uns</a>
         </div>
-        <a href="" id="darklightmodeicon"><img type="icon" src="" alt="" id="darklightmodeicon"></a>
+        <img type="icon" src="../assets/sun.svg" alt="" id="darklightmodeiconsvg" class="darklightmodeiconsvg">
       </div>
     </div>
   </header>
 
   <div class="landing">
     <div class="landingtext">
-      <h1></h1>
-      <h3></h3>
-      <a href=""><button></button></a>
+      <h1>Du Hast Das Produkt, Wir Machen Darauf Aufmerksam</h1>
+      <h3>Wir schaffen, dass dein Produkt gesehen wird und in Erinnerung bleibt</h3>
+      <a href=""><button class="button landingbutton">Jetzt buchen</button></a>
     </div>
     <div class="illustrations">
-      <img src="" alt="">
+      <img src="../assets/Illustrationslight.svg" alt="" id="illustrations">
     </div>
   </div>
 
   <div class="services">
-    <img src="" alt="" id="heading serviceheading">
-    <div class="servicardsandheadingframe"> to align the cards, subheading and button in center
+    <div class="headingframe">
+      <img src="../assets/servicesheading.svg" alt="" id="bgheading">
+      <h1 id="heading">Was Wir Für Dich Machen</h1>
+    </div>
+    <!-- to align the cards, subheading and button in center -->
+    <div class="servicesandcalltoaction">
       <div class="servicecards">
-        <div>
-          <img src="" alt="">
-          <h2></h2>
-          <p></p>
+        <div class="card videocard">
+          <div class="cardcontent">
+            <img src="../assets/WerbevideosIcon.svg" alt="">
+            <h2>Werbevideos</h2>
+            <p>Ob Gastronomie, Einzelhandel, Online-Business, wir filmen Ihnen und Ihrem Produkt ein Werbevideo, was Ihr Geschäft in Erinnerung bleiben lässt!</p>
+          </div>
         </div>
-        <div>
-          <img src="" alt="">
-          <h2></h2>
-          <p></p>
+        <div class="card fotocard">
+          <div class="cardcontent">
+            <img src="../assets/FotografieIcon.svg" alt="">
+            <h2>Produkt Fotografie</h2>
+            <p>Wir produzieren für Sie eine Reihe von qualitativ hochwertigen und treffenden Produkt-Bildern für Ihre Social media Präsenz, Werbeposter,  Homepage etc.</p>
+          </div>
         </div>
-        <div>
-          <img src="" alt="">
-          <h2></h2>
-          <p></p>
+        <div class="card grafikcard">
+          <div class="cardcontent">
+            <img src="../assets/DesignIcon.svg" alt="">
+            <h2>Grafik-Design</h2>
+            <p>Brauchen Sie ein perfektes Logo, ein Cover, ein Poster oder andere digitale Grafiken für Ihr Produkt oder Business? Wir verwirklichen Ihre Ideen!</p>
+          </div>
         </div>
       </div>
-      <h2 id="servicesubheading"></h2>
-      <a href=""><button id="calltoactionbutton"></button></a>
+      <h2 id="servicesubheading">Schreib uns einfach eine kurze Nachricht in der du uns erzählst, was wir für dich verwirklichen dürfen.</h2>
+      <a href=""><button class="button" id="calltoactionbutton">Jetzt buchen</button></a>
     </div>
   </div>
 
   <div class="clients">
-    <img src="" alt="" id="heading clientsheading">
-    <script class="cardcarroussel">
-
-    </script>
+    <div class="headingframe">
+      <img src="../assets/kundenheading.svg" alt="" id="bgheading">
+      <h1 id="heading">Das Sagen Unsere Kunden</h1>
+    </div>
+    <div class="carrousselcard yellowcard">
+      <div class="carrousselcardtext">
+        <h1>“Lorem Ipsum typewriter font helvetica qutoe of Max Mustermann und so weiter und sofort”</h1>
+        <h3>Dagmar Gerigk, Founder von <br> Vamos Leadership Coaching</h3>
+      </div>
+      <div class="carrousselcardimagebg yellowcardimagebg">
+        <img src="../assets/clientimgVamosCoach.svg" alt="">
+      </div>
+    </div>
+    <div class="carrousselcard bluecard">
+      <div class="carrousselcardtext">
+        <h1></h1>
+        <h3></h3>
+      </div>
+      <div class="carrousselcardimagebg bluecardimagebg">
+        <img src="" alt="">
+      </div>
+    </div>
+    <div class="carrousselcard greencard">
+      <div class="carrousselcardtext">
+        <h1></h1>
+        <h3></h3>
+      </div>
+      <div class="carrousselcardimagebg greencardimagebg">
+        <img src="" alt="">
+      </div>
+    </div>
   </div>
 
   <div class="contact">
-    <img src="" alt="" id="heading contactheading">
-    <div class="contactinputsleft">
-      <input type="email" name="Email" id="inputs emailinput">
-      <input type="name" name="Vorname" placeholder="Vorname" id="inputs firstname">
-      <input type="lastname" name="Nachname" placeholder="Nachname" id="inputs lastname">
+    <div class="headingframe">
+      <img src="../assets/kontaktheading.svg" alt="" id="bgheading">
+      <h1 id="heading">Kontakt Aufbauen</h1>
     </div>
-    <div class="contactinputsright">
-      <p></p>
-      <textarea name="Message"  cols="30" rows="10" id="message"></textarea>
-      <button id="sendbutton"></button>
+    <div class="contactinputs">
+      <div class="contactinputsleft">
+        <input type="email" name="Email" placeholder="Email" required class="inputs emailinput">
+        <input type="name" name="Nachname" placeholder="Name" class="inputs lastname">
+        <input type="Firstname" name="Vorname" placeholder="Vorname" class="inputs firstname">
+        <input type="name" name="companyname" placeholder="Firmenname" >
+      </div>
+      <div class="contactinputsright">
+        <div class="messageframe">
+          <p>Deine Nachricht...</p>
+          <textarea name="Message"  cols="30" rows="10" maxlength="2000" id="message" placeholder="schreibe deine Nachricht hier..."></textarea>
+        </div>
+        <button class="button sendbutton">senden <i class="fa-regular fa-paper-plane"></i></button>
+      </div>
     </div>
   </div>
 
   <footer>
     <div class="footerlogomailtel">
-      <img src="" alt="" id="logofooter">
-      <p id="footertel">+49 123 4567890</p>
-      <p id="footeremail">contact@rolup.de</p>
+      <a href="../code/index.html"><img src="../assets/RolupLogowhite.svg" alt="" id="footerlogo"></a>
+      <div class="telandmail"><p>Tel:</p><p id="footertel">+49 123 4567890</p></div>
+      <div class="telandmail"><p>Mail:</p><p id="footeremail">kontakt@rolup.de</p></div>
     </div>
     <div class="footersocial">
-      <h2></h2>
-      <a href=""><img src="" alt="" id="socialicon"><p>linkedIn</p></a>
-      <a href=""><img src="" alt="" id="socialicon"><p>Instagram</p></a>
-      <a href=""><img src="" alt="" id="socialicon"><p>twitter/X</p></a>
-      <a href=""><img src="" alt="" id="socialicon"><p>fiverr</p></a>
+      <h2>Soziale Netzwerke</h2>
+      <a href="https://linkedin.com" target="_blank" id="linkedinlink"><i class="fa-brands fa-linkedin socialicon"></i>linkedIn</a>
+      <a href="" target="_blank" id="instagramlink"><i class="fa-brands fa-instagram socialicon"></i>Instagram</a>
+      <a href="" target="_blank" id="youtubelink"><i class="fa-brands fa-youtube socialicon"></i>YouTube</a>
     </div>
     <div class="footernavigation">
-      <h2></h2>
-      <a href="" id="footerlinkhome"><p>Home</p></a>
-      <a href="" id="footerlinkabout"><p>Über</p></a>
-      <a href="" id="footerlinkprojects"><p>Projects</p></a>
+      <h2>Navigation</h2>
+      <a href="../code/index.html" id="footerlinkhome">Home</a>
+      <a href="../code/about.html" id="footerlinkabout">Über uns</a>
+      <a href="../code/projects.html" id="footerlinkprojects">Projects</a>
     </div>
     <div class="footerlegal">
-      <h2></h2>
-      <a href="" id="footerlinkAGB"><p>AGB</p></a>
-      <a href="" id="footerlinkprivacypolicy"><p>Datenschutzerklärung</p></a>
-      <a href="" id="footerlinkprojectsimpressum"><p>Impressum</p></a>
+      <h2>Rechtliches</h2>
+      <a href="" id="footerlinkAGB">AGB</a>
+      <a href="" id="footerlinkprivacypolicy">Datenschutzerklärung</a>
+      <a href="" id="footerlinkprojectsimpressum">Impressum</a>
     </div>
   </footer>
+
+  <script src="index.js"></script>
 </body>
 </html>
+
