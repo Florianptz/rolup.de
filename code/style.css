@@ -37,69 +37,12 @@ body{
   background-color: var(--background-clr);
 }
 
-header{
-  /* content alignment */
-  padding: 1rem 3.5rem;
-  /* style */
-  background-color: var(--background-clr);
-  box-shadow: var(--boxshadow-header);
-  /* positioning */
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-}
-.headerframe{
-  /* sizing */
-  width: 100%;
-  height: fit-content;
-  /* content alignment */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.headerlinksandicon{
-  /* sizing */
-  width: 35%;
-  height: fit-content;
-  min-width: 300px;
-  /* content alignment */
-  display: flex;
-  gap: 10%;
-  align-items: center;
-}
-.headerlinks{
-  /* sizing */
-  width: 100%;
-  height: fit-content;
-  /* content alignment */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /* text */
-  font-size: 16px;
-}
-.headerlinks a:hover{
-  /* text */
-  color: #0066FF;
-}
-#darklightmodeiconsvg{
-  width: 30px;
-  height: 30px;
-  border-radius: 5px;
-}
-#darklightmodeiconsvg:hover{
-  background-color: var(--cardsbg-clr);
-  cursor: pointer;
-}
-
 .landing{
   /* sizing */
   width: 90%;
   height: fit-content;
   /* positioning */
-  margin: 150px auto 0px auto;
+  margin: 70px auto 0px auto;
   /* content alignment */
   display: flex;
   justify-content: space-between;
@@ -482,95 +425,4 @@ header{
 .fa-paper-plane{
   /* style */
   color: #ffffff;
-}
-
-footer{
-  /* sizing */
-  height: 350px;
-  /* style */
-  background-color: var(--secondarybg-clr);
-  /* content alignment */
-  display: flex;
-  justify-content: space-between;
-  padding: 4rem 4.8rem;
-}
-footer p,h2{
-  /* text */
-  color: var(--background-clr);
-}
-footer h2{
-  /* text */
-  font-size: 20px;
-}
-footer p{
-  /* text */
-  font-size: 18px;
-}
-.footersocial a, .footernavigation a, .footerlegal a{
-  /* text */
-  font-size: 18px;
-  color: var(--background-clr);
-}
-.footernavigation a:hover, .footerlegal a:hover{
-  /* style */
-  color: #0066FF;
-}
-.footerlogomailtel{
-  /* content alignment */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 30px;
-  /* positioning */
-  margin-right: 100px;
-}
-#footerlogo{
-  /* sizing */
-  object-fit: contain;
-  width: 250px;
-}
-.telandmail{
-  /* sizing */
-  width: 190px;
-  /* content alignment */
-  display: flex;
-  justify-content: space-between;
-}
-.footersocial, .footernavigation, .footerlegal{
-  /* content alignment */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
-}
-.socialicon{
-  /* style */
-  color: var(--background-clr);
-  /* positioning */
-  margin-right: 10px;
-}
-.fa-youtube{
-  /* positioning */
-  margin-right: 6px;
-}
-#linkedinlink:hover{
-  /* style */
-  background: #0E76A8;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-#instagramlink:hover{
-  /* style */
-  background: -webkit-linear-gradient(45deg,#f58529, #feda77, #dd2a7b, #8134af, #515bd4);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-#youtubelink:hover{
-  /* style */
-  background: #c4302b;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
