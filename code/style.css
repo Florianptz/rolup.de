@@ -126,7 +126,7 @@ body{
   /* content alignment */
   display: grid;
 }
-.headingframe img{
+#bgheading{
   /* sizing */
   object-fit: contain;
   height: 180px;
@@ -426,3 +426,4 @@ body{
   /* style */
   color: #ffffff;
 }
+

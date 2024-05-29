@@ -56,3 +56,26 @@ darkModeToggle.addEventListener('click', () => {
 });
 
 //DARKMODE
+
+// WERBEVIDEO PROJECTS PAGE 
+// Pause Video if not in view
+const bannerVideo = document.querySelector('.videobanner video');
+
+function pauseVideo() {
+  if (isElementInViewport(bannerVideo)) {
+    bannerVideo.play();
+  } else {
+    bannerVideo.pause();
+  }
+}
+
+function isElementInViewport(el) {
+  var rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElemement.clientHeight)
+    );
+}
+
+window.addEventListener('scroll', pauseVideo);
+// WERBEVIDEO PROJECTS PAGE
