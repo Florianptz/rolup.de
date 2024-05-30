@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="swiper.scss">
   <link rel="stylesheet" href="style.css">
   <title>rolup</title>
   <script src="https://kit.fontawesome.com/28a968a5bb.js" crossorigin="anonymous"></script>
@@ -76,34 +77,43 @@
       <img src="../assets/kundenheading.svg" alt="" id="bgheading">
       <h1 id="heading">Das Sagen Unsere Kunden</h1>
     </div>
-    <div class="carrousselcard yellowcard">
-      <div class="carrousselcardtext">
-        <h1>“Lorem Ipsum typewriter font helvetica qutoe of Max Mustermann und so weiter und sofort”</h1>
-        <h3>Dagmar Gerigk, Founder von <br> Vamos Leadership Coaching</h3>
-      </div>
-      <div class="carrousselcardimagebg yellowcardimagebg">
-        <img src="../assets/clientimgVamosCoach.svg" alt="">
-      </div>
-    </div>
-    <div class="carrousselcard bluecard">
-      <div class="carrousselcardtext">
-        <h1></h1>
-        <h3></h3>
-      </div>
-      <div class="carrousselcardimagebg bluecardimagebg">
-        <img src="" alt="">
-      </div>
-    </div>
-    <div class="carrousselcard greencard">
-      <div class="carrousselcardtext">
-        <h1></h1>
-        <h3></h3>
-      </div>
-      <div class="carrousselcardimagebg greencardimagebg">
-        <img src="" alt="">
-      </div>
-    </div>
   </div>
+
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide carrousselcard yellowcard">
+        <div class="carrousselcardtext">
+          <h1>“Lorem Ipsum typewriter font helvetica qutoe of Max Mustermann und so weiter und sofort”</h1>
+          <h3>Dagmar Gerigk, Founder von <br> Vamos Leadership Coaching</h3>
+        </div>
+        <div class="carrousselcardimagebg yellowcardimagebg">
+          <img src="../assets/clientimgVamosCoach.svg" alt="">
+        </div>
+      </div>
+      <div class="swiper-slide carrousselcard bluecard"></div>
+      <div class="swiper-slide carrousselcard greencard"></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="swiper.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "cards",
+      grabCursor: true,
+      rewind: true,
+      autoplay: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 
   <div class="contact">
     <div class="headingframe">
