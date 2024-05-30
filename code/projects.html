@@ -36,13 +36,13 @@
         </div>
         <div class="h1andbuttovervideo">
           <h1>Sportkarate <br> Wegberg/Wassenberg</h1>
-          <a href="" class="linktofullvideo">
+          <a href="https" class="linktofullvideo">
             <button><i class="fa-solid fa-play playicon"></i>Video ansehen - 4 Min</button>
           </a>
         </div>
       </div>
       <div class="companycard karatecard">
-        <img class="karatelogo" draggable="false" 
+        <img class="companylogo karatelogo" draggable="false" 
         srcset="https://jimdo-storage.freetls.fastly.net/image/326213540/4e3e6160-d4d7-4be1-8a76-8ecf4b508b46.png?quality=80,90&amp;auto=webp&amp;disable=upscale&amp;width=1919&amp;height=1920&amp;trim=0,0,0,0 1919w, 
         https://jimdo-storage.freetls.fastly.net/image/326213540/4e3e6160-d4d7-4be1-8a76-8ecf4b508b46.png?quality=80,90&amp;auto=webp&amp;disable=upscale&amp;width=1440&amp;height=1440&amp;trim=0,0,0,0 1440w, 
         https://jimdo-storage.freetls.fastly.net/image/326213540/4e3e6160-d4d7-4be1-8a76-8ecf4b508b46.png?quality=80,90&amp;auto=webp&amp;disable=upscale&amp;width=1200&amp;height=1200&amp;trim=0,0,0,0 1200w, 
@@ -55,25 +55,38 @@
         https://jimdo-storage.freetls.fastly.net/image/326213540/4e3e6160-d4d7-4be1-8a76-8ecf4b508b46.png?quality=80,90&amp;auto=webp&amp;disable=upscale&amp;width=240&amp;height=240&amp;trim=0,0,0,0 240w, 
         https://jimdo-storage.freetls.fastly.net/image/326213540/4e3e6160-d4d7-4be1-8a76-8ecf4b508b46.png?quality=80,90&amp;auto=webp&amp;disable=upscale&amp;width=120&amp;height=120&amp;trim=0,0,0,0 120w" 
         sizes="(max-width:140px) 720px,(max-width:140px) 640px,(max-width:900px) 100vw,(max-width:1280px) 900px,(max-width:1440px) 450px" alt="" loading="lazy">
-        <p>Mit der Karateschule Sportkarate Wegberg/Wassenberg haben wir einen Werbeslot für die regionalen Kinos produziert.</p>
+        <p class="projectdescr">Mit der Karateschule Sportkarate Wegberg/Wassenberg haben wir einen Werbeslot für die regionalen Kinos produziert.</p>
       </div>
     </div>
     <div class="project vamoscoach">
-      <div class="companycard"></div>
+      <div class="companycard">
+        <img src="" alt="" class="vamoslogo">
+        <p class="projectdescr">Für Vamos haben wir sowohl die Buchcover für zwei Bücher, als auch Grafiken im Buch erstellt.</p>
+      </div>
       <div class="projectimpression imagesliderframe">
-        <button class="nextimgbtn"></button>
         <div class="imageslider">
-          <img src="../assets/RolupLogoblack.svg" alt="">
-          <img src="../assets/RolupLogoblack.svg" alt="">
-          <img src="../assets/RolupLogoblack.svg" alt="">
-          <img src="../assets/RolupLogoblack.svg" alt="">
+          <div class="slide slide1">
+            <img src="../assets/explslide1.svg" alt="">
+          </div>
+          <div class="slide slide2">
+            <img src="../assets/explslide2.svg" alt="">
+          </div>
+          <div class="slide slide3">
+            <img src="../assets/explslide3.svg" alt="">
+          </div>
+          <div class="slide slide4">
+            <img src="../assets/explslide2.svg" alt="">
+          </div>
         </div>
-        <button class="previousimgbtn"></button>
+        <div class="slidecontrols">
+          <button id="previmgbtn"><i class="fa-regular fa-circle-up"></i></button>
+          <button id="nextimgbtn"><i class="fa-regular fa-circle-up"></i></button>
+        </div>
       </div>
     </div>
-    <div class="project">
-      <div class="projectimpression"></div>
-      <div class="companycard"></div>
+    <div class="project emptyproject">
+      <div class="projectimpression emptyprojectimpression"></div>
+      <div class="companycard emptyprojectcompanycard"></div>
     </div>
 
     <footer>
@@ -86,7 +99,7 @@
         <h2>Soziale Netzwerke</h2>
         <a href="https://linkedin.com" target="_blank" id="linkedinlink"><i class="fa-brands fa-linkedin socialicon"></i>linkedIn</a>
         <a href="" target="_blank" id="instagramlink"><i class="fa-brands fa-instagram socialicon"></i>Instagram</a>
-        <a href="" target="_blank" id="youtubelink"><i class="fa-brands fa-youtube socialicon"></i>YouTube</a>
+        <a href="https://www.youtube.com/channel/UCNaw1HETMFbHbRhs4PcM6iA" target="_blank" id="youtubelink"><i class="fa-brands fa-youtube socialicon"></i>YouTube</a>
       </div>
       <div class="footernavigation">
         <h2>Navigation</h2>
@@ -103,5 +116,6 @@
     </footer>
 
     <script src="../code/index.js"></script>
+    <script src="../code/projects.js"></script>
   </body>
 </html>
