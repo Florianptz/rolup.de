@@ -90,3 +90,23 @@
     font-size: 46px;
     text-wrap: nowrap;
 }
+
+.bragger{
+    font-size: 80px;
+    font-weight: 400;
+    margin: 100px auto;
+}
+
+.bragger strong{
+    font-weight: 800;
+}
+
+.about-us-grid{
+    display: grid;
+    grid-template-areas: 1fr 1fr;
+}
+
+.about-us-grid:nth-child(2n){
+    background: #83BE7A;
+    height: 484px;
+}
