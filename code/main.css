@@ -1,3 +1,26 @@
+:root {
+  /* primary background */
+  --background-clr: #fff;
+  /* secondary background */
+  --secondarybg-clr: #000;
+  /* header box shadow */
+  --boxshadow-header: 0px 4px 60px 0px #dbdbdb;
+  /* text (headings and titles) */
+  --primarytxt-clr: #000;
+  /* subtitles (small text) */
+  --secondarytxt-clr: #8A8A8A;
+  /* service cards background */
+  --cardsbg-clr: #EFEFEF;
+}
+.darkmode {
+  --background-clr: #000;
+  --secondarybg-clr: #fff;
+  --boxshadow-header: none;
+  --primarytxt-clr: #fff;
+  --secondarytxt-clr: #888;
+  --cardsbg-clr: #1C1C1C;
+}
+
 header{
   /* content alignment */
   padding: 1rem 3.5rem;
@@ -60,12 +83,18 @@ footer{
   height: 350px;
   /* style */
   background-color: var(--secondarybg-clr);
+  /* positioning */
+  margin-top: auto;
+  /* content alignment */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4rem 4.8rem 2rem 4.8rem;
+}
+.footersection1{
   /* content alignment */
   display: flex;
   justify-content: space-between;
-  padding: 4rem 4.8rem;
-  /* positioning */
-  margin-top: auto;
 }
 footer p,h2{
   /* text */
@@ -146,4 +175,39 @@ footer p{
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.footersection2{
+  /* size */
+  width: 100%;
+  height: 30px;
+  /* content alignment */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.devideline{
+  /* sizing */
+  width: 100%;
+  /* style */
+  color: var(--secondarytxt-clr);
+}
+.footersection2 p, .footersection2 a{
+  /* text */
+  font-size: 14px;
+  text-decoration: underline;
+  color: #808080;
+}
+.footersection2 p{
+  /* style */
+  text-decoration: none;
+}
+.footersection2 div{
+  /* sizing */
+  width: 40%;
+  /* content alginment */
+  display: flex;
+  justify-content: space-between;
+  /* positioning */
+  margin: 0px auto;
 }
