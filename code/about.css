@@ -38,8 +38,6 @@ header{
 }
 
 body{
-  /* sizing */
-  min-height: 1000px;
   /* content alignment */
   display: flex;
   flex-direction: column;
