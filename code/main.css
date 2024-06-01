@@ -45,7 +45,7 @@ header{
 }
 .headerlinksandicon{
   /* sizing */
-  width: 35%;
+  width: 40%;
   height: fit-content;
   min-width: 300px;
   /* content alignment */
@@ -63,6 +63,26 @@ header{
   align-items: center;
   /* text */
   font-size: 16px;
+}
+.headerbutton button{
+  /* sizing */
+  width: 130px;
+  height: 40px;
+  border-radius: 10px;
+  /* text */
+  font-size: 16px;
+  color: #fff;
+  /* button style */
+  background-color: #0066FF;
+  border: none;
+  cursor: pointer;
+}
+.headerbutton:hover{
+  /* cursor */
+  cursor: pointer;
+  /* transformation */
+  transform: scale(1.02);
+  transition: 0.2s;
 }
 .headerlinks a:hover{
   /* text */

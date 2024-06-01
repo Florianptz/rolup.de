@@ -55,7 +55,7 @@ darkModeToggle.addEventListener('click', () => {
 
 // CLIENTSLIDER
 
-const slideContainer = document.querySelector('.clientsliderframe');
+const slideContainer = document.querySelector('.clientsliderouterframe');
 const slide = document.querySelector('.clientslider');
 const nextBtn = document.getElementById('nextimgbtn');
 const prevBtn = document.getElementById('previmgbtn');
