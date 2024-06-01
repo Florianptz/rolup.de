@@ -51,106 +51,56 @@ body {
   width: 100%;
   height: 445px;
   background-color: #000;
-  color: #fff;
+  background: linear-gradient(180deg, #ffffff 0%, #ffffff 76%, #d8d8d8 98%);
   box-shadow: 0 2px 15px 10px #68686840;
-}
-
-.subheader-content {
-  width: 85%;
-  height: 100%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  overflow: hidden;
-  align-items: end;
-}
-
-.subheader-content img {
-  margin-bottom: -2px;
 }
 
 .subheader-text {
   max-width: fit-content;
-  margin: auto;
-  position: absolute;
+  margin: 100px auto;
   text-align: center;
-  left: 50%;
-  transform: translate(-50%, -100%);
 }
 
-.subheader-text svg {
+.subheader-text img {
+  height: 75px;
   position: relative;
   top: 20px;
-  scale: 0.94;
 }
 
 .subheader-text h1 {
-  color: #fff !important;
   font-size: 75px;
   text-wrap: nowrap;
 }
 
 .subheader-text h3 {
-  color: #fff !important;
   font-size: 46px;
   text-wrap: nowrap;
 }
 
-.bragger {
-  font-size: 80px;
-  font-weight: 400;
-  margin: 100px auto;
-}
-
-.bragger strong {
-  font-weight: 800;
-}
-
 .about-us-grid {
   height: 150vh;
+  width: 80%;
+  place-self: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  place-items: center;
+  background: url(../assets/bgforms.svg) no-repeat;
+  overflow: visible;
 }
 
-.about-us-grid-item:nth-child(1),
-.about-us-grid-item:nth-child(4) {
-  place-self: center;
-}
-
-.about-us-grid-item:nth-child(2) {
-  background: #83be7a;
-  border-radius: 100px 0px 0px 100px;
-  position: relative;
-}
-
-.about-us-grid-item:nth-child(3) {
-  background: #8cb0e6;
-  border-radius: 0px 100px 100px 0px;
-  position: relative;
+.about-us-grid-item {
+  width: 90%;
+  aspect-ratio: 515/861;
+  border: 1px solid #dedede;
+  box-shadow: 0px 2px 5px 0px #afafaf80;
+  background: #dedede80 50%;
+  border-radius: 30px;
 }
 
 .about-us-grid-item-text {
-  width: 70%;
-  margin: auto;
-}
-
-.intro {
-  font-size: 40px;
-  font-weight: 400;
-  text-align: left;
-}
-
-.description {
-  font-size: 35px;
-  font-weight: 400;
-  text-align: left;
 }
 
 .about-us-grid-item img {
-  position: absolute;
-  bottom: 0;
-  right: 30%;
 }
 
 .headingframe {
