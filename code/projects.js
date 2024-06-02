@@ -81,7 +81,7 @@ const slideContainer = document.querySelector('.imagesliderframe');
 const slide = document.querySelector('.imageslider');
 const nextBtn = document.getElementById('nextimgbtn');
 const prevBtn = document.getElementById('previmgbtn');
-const interval = 3000;
+const interval = 6000;
 
 let slides = document.querySelectorAll('.slide');
 let index = 1;

@@ -43,11 +43,16 @@ header{
   justify-content: space-between;
   align-items: center;
 }
+#headerlogo{
+  /* size */
+  object-fit: contain;
+  height: 35px;
+}
 .headerlinksandicon{
   /* sizing */
   width: 40%;
   height: fit-content;
-  min-width: 300px;
+  min-width: 460px;
   /* content alignment */
   display: flex;
   gap: 10%;
