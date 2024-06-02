@@ -80,12 +80,12 @@ body {
 .about-us-grid {
   height: 150vh;
   width: 80%;
-  place-self: center;
+  align-self: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  place-items: center;
+  align-items: center;
+  justify-items: baseline;
   background: url(../assets/bgforms.svg) no-repeat;
-  overflow: visible;
 }
 
 .about-us-grid-item {
@@ -93,8 +93,20 @@ body {
   aspect-ratio: 515/861;
   border: 1px solid #dedede;
   box-shadow: 0px 2px 5px 0px #afafaf80;
-  background: #dedede80 50%;
+  background: #dedede80;
   border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.image-wrapper {
+  height: 261px;
+  width: 261px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background: #ffffff80;
 }
 
 .about-us-grid-item-text {
