@@ -1,7 +1,16 @@
+// HEADER BUTTON KONTAKT SCROLL FUNCTION
+
+function scrollFunction() {
+  const element = document.getElementById("contactsection");
+  element.scrollIntoView({ behavior: 'smooth'});
+}
+// HEADER BUTTON KONTAKT SCROLL FUNCTION
+
 //DARKMODE
 
 var sunmoonicon = document.getElementById("darklightmodeiconsvg");
 var headerlogo = document.getElementById("headerlogo");
+var aboutlogo = document.getElementById("aboutpagelogo");
 // var serviceheadline = document.getElementById("");
 // var clientsheadline = document.getElementById("");
 // var contactheadline = document.getElementById("");
@@ -31,6 +40,7 @@ if (darkMode === 'enabled') {
   enableDarkMode();
   sunmoonicon.src = "../assets/moon.svg";
   headerlogo.src = "../assets/RolupLogowhite.svg";
+  aboutlogo.src = "../assets/RolupLogowhite.svg";
 }
 
 // When someone clicks the button
@@ -43,11 +53,13 @@ darkModeToggle.addEventListener('click', () => {
     enableDarkMode();
     sunmoonicon.src = "../assets/moon.svg";
     headerlogo.src = "../assets/RolupLogowhite.svg";
+    aboutlogo.src = "../assets/RolupLogowhite.svg";
   // if it has been enabled, turn it off  
   } else {  
     disableDarkMode(); 
     sunmoonicon.src = "../assets/sun.svg";
     headerlogo.src = "../assets/RolupLogoblack.svg";
+    aboutlogo.src = "../assets/RolupLogoblack.svg";
   }
 });
 
@@ -129,3 +141,42 @@ prevBtn.addEventListener('click', moveToPreviousSlide);
 startSlide();
 
 // CLIENTSLIDER
+
+// CONTACT FORM
+
+function validate() { 
+  let email = 
+      document.getElementById("emailinput").value; 
+  let lastname = 
+      document.getElementById("lastname").value; 
+  let firstname = 
+      document.getElementById("firstname").value; 
+  let message = 
+      document.getElementById("message").value; 
+  let error_message = 
+      document.getElementById("error-txt"); 
+
+  error_message.style.padding = "10px"; 
+
+  let errors = []; 
+
+  if (email.indexOf("@") == -1 || email.length < 6) { 
+      errors.push( 
+          "ungültige Email-Adresse");} 
+  if (lastname.length < 5) { 
+      errors.push("Nachname erforderlich");} 
+  if (firstname.length < 5) { 
+      errors.push("Vorname erforderlich");} 
+  if (message.length <= 10) { 
+      errors.push( 
+          "Please Enter More Than 10 Characters");} 
+  if (errors.length > 0) { 
+      error_message.innerHTML = 
+          errors.join("<br>"); 
+      return false;} 
+  else { 
+      alert( 
+          "Ihre Nachricht wurde erfolgreich abgeschickt"); 
+      return true;}}
+
+// CONTACT FORM

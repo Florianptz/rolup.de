@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 :root {
   /* primary background */
   --background-clr: #fff;
@@ -69,7 +73,7 @@ header{
   /* text */
   font-size: 16px;
 }
-.headerbutton button{
+.headerbutton{
   /* sizing */
   width: 130px;
   height: 40px;

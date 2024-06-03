@@ -490,6 +490,7 @@ body{
   border-radius: 8px;
   /* text */
   font-size: 22px;
+  font-weight: 500;
   color: #fff;
   /* button style */
   background-color: #0066FF;
@@ -499,4 +500,15 @@ body{
   /* style */
   color: #ffffff;
 }
-
+.error-txt p{
+  /* text */
+  font-size: 14px;
+  text-align: left;
+  color: #ff5353;
+}
+.error-txt{
+  /* size */
+  width: 100%;
+  /* display */
+  display: none;
+}
