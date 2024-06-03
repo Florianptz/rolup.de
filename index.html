@@ -1,182 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="../assets/favicon.png">
-  <link rel="stylesheet" href="../code/style.css">
-  <title>rolup</title>
-  <script src="https://kit.fontawesome.com/28a968a5bb.js" crossorigin="anonymous"></script>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.png">
+    <link rel="stylesheet" href="../code/style.css">
+    <title>rolup</title>
+    <script src="https://kit.fontawesome.com/28a968a5bb.js" crossorigin="anonymous"></script>
+  </head>
 
-<body>
-  <header>
-    <link rel="stylesheet" href="../code/main.css">
-    <div class="headerframe">
-      <a href="../index.html"><img src="../assets/RolupLogoblack.svg" alt="" id="headerlogo"></a>
-      <div class="headerlinksandicon">
-        <div class="headerlinks">
-          <a href="../index.html#contactsection" class="headerbutton"><button>Kontaktieren</button></a>
-          <a href="../code/projects.html">Projekte</a>
-          <a href="">Services</a>
-          <a href="../code/about.html">Über uns</a>
-        </div>
-        <img type="icon" src="../assets/sun.svg" alt="" id="darklightmodeiconsvg" class="darklightmodeiconsvg">
-      </div>
-    </div>
-  </header>
-
-  <div class="landing">
-    <div class="landingtext">
-      <h1>Du hast das Produkt, wir machen darauf aufmerksam</h1>
-      <h3>Wir schaffen, dass dein Produkt gesehen wird und in Erinnerung bleibt</h3>
-      <a href=""><button class="button landingbutton">Jetzt buchen</button></a>
-    </div>
-    <div class="illustrations">
-      <img src="../assets/Illustrationslight.svg" alt="" id="illustrations">
-    </div>
-  </div>
-
-  <div class="services">
-    <div class="headingframe">
-      <img src="../assets/servicesheading.svg" alt="" id="bgheading">
-      <h1 id="heading">Was wir für dich machen</h1>
-    </div>
-    <!-- to align the cards, subheading and button in center -->
-    <div class="servicesandcalltoaction">
-      <div class="servicecards">
-        <div class="card videocard">
-          <div class="cardcontent">
-            <img src="../assets/WerbevideosIcon.svg" alt="">
-            <h2>Werbevideos</h2>
-            <p>Ob Gastronomie, Einzelhandel, Online-Business, wir filmen Ihnen und Ihrem Produkt ein Werbevideo, was Ihr Geschäft in Erinnerung bleiben lässt!</p>
+  <body>
+    <header>
+      <link rel="stylesheet" href="../code/main.css">
+      <div class="headerframe">
+        <a href="../index.html"><img src="../assets/RolupLogoblack.svg" alt="" id="headerlogo"></a>
+        <div class="headerlinksandicon">
+          <div class="headerlinks">
+            <button onclick="scrollFunction()" href="" id="headerbutton" class="headerbutton">Kontaktieren</button>
+            <a href="../code/projects.html">Projekte</a>
+            <a href="../index.html#servicesection">Services</a>
+            <a href="../code/about.html">Über uns</a>
           </div>
-        </div>
-        <div class="card fotocard">
-          <div class="cardcontent">
-            <img src="../assets/FotografieIcon.svg" alt="">
-            <h2>Produktfotografie</h2>
-            <p>Wir produzieren für Sie eine Reihe von qualitativ hochwertigen und treffenden Produkt-Bildern für Ihre Social media Präsenz, Werbeposter,  Homepage etc.</p>
-          </div>
-        </div>
-        <div class="card grafikcard">
-          <div class="cardcontent">
-            <img src="../assets/DesignIcon.svg" alt="">
-            <h2>Grafik-Design</h2>
-            <p>Brauchen Sie ein perfektes Logo, ein Cover, ein Poster oder andere digitale Grafiken für Ihr Produkt oder Business? Wir verwirklichen Ihre Ideen!</p>
-          </div>
+          <img type="icon" src="../assets/sun.svg" alt="" id="darklightmodeiconsvg" class="darklightmodeiconsvg">
         </div>
       </div>
-      <h2 id="servicesubheading">Schreib uns einfach eine kurze Nachricht in der du uns erzählst, was wir für dich verwirklichen dürfen.</h2>
-      <a href=""><button class="button" id="calltoactionbutton">Jetzt buchen</button></a>
-    </div>
-  </div>
+    </header>
 
-  <div class="clients">
-    <div class="headingframe">
-      <img src="../assets/kundenheading.svg" alt="" id="bgheading">
-      <h1 id="heading">Das sagen unsere Kunden</h1>
+    <div class="landing">
+      <div class="landingtext">
+        <h1>Du hast das Produkt, wir machen darauf aufmerksam</h1>
+        <h3>Wir schaffen, dass dein Produkt gesehen wird und in Erinnerung bleibt</h3>
+        <button class="button landingbutton">Jetzt buchen</button>
+      </div>
+      <div class="illustrations">
+        <img src="../assets/Illustrationslight.svg" alt="" id="illustrations">
+      </div>
     </div>
-    <div class="clientsliderouterframe">
-      <div class="clientsliderframe">
-        <div id="clientslider" class="clientslider">
-          <div class="slide blueslide">
-            <div class="slidetxt">
-              <h1>“Lorem Ipsum typewriter font helvetica qutoe of Max Mustermann und so weiter und sofort”</h1>
-              <h3>Dagmar Gerigk, Leadership Coach, Autor und Writer</h3>
-            </div>
-            <div class="slideimgbg blueslideimgbg">
-              <img src="../assets/DagmarGerigkclientcardimg.png" alt="">
-            </div>
-          </div>
-          <div class="slide yellowslide">
-            <div class="slidetxt">
-              <h1></h1>
-              <h3></h3>
-            </div>
-            <div class="slideimgbg yellowslideimgbg">
-              <img src="" alt="">
+
+    <div class="services">
+      <div class="headingframe">
+        <img src="../assets/servicesheading.svg" alt="" id="bgheading">
+        <h1 id="heading">Was wir für dich machen</h1>
+      </div>
+      <!-- to align the cards, subheading and button in center -->
+      <div class="servicesandcalltoaction">
+        <div class="servicecards">
+          <div class="card videocard">
+            <div class="cardcontent">
+              <img src="../assets/WerbevideosIcon.svg" alt="">
+              <h2>Werbevideos</h2>
+              <p>Ob Gastronomie, Einzelhandel, Online-Business, wir filmen Ihnen und Ihrem Produkt ein Werbevideo, was Ihr Geschäft in Erinnerung bleiben lässt!</p>
             </div>
           </div>
-          <div class="slide greenslide">
-            <div class="slidetxt">
-              <h1></h1>
-              <h3></h3>
+          <div class="card fotocard">
+            <div class="cardcontent">
+              <img src="../assets/FotografieIcon.svg" alt="">
+              <h2>Produktfotografie</h2>
+              <p>Wir produzieren für Sie eine Reihe von qualitativ hochwertigen und treffenden Produkt-Bildern für Ihre Social media Präsenz, Werbeposter,  Homepage etc.</p>
             </div>
-            <div class="slideimgbg greenslideimgbg">
-              <img src="" alt="">
+          </div>
+          <div class="card grafikcard">
+            <div class="cardcontent">
+              <img src="../assets/DesignIcon.svg" alt="">
+              <h2>Grafik-Design</h2>
+              <p>Brauchen Sie ein perfektes Logo, ein Cover, ein Poster oder andere digitale Grafiken für Ihr Produkt oder Business? Wir verwirklichen Ihre Ideen!</p>
             </div>
           </div>
         </div>
-      </div>
-      <div class="slidercontrols">
-        <button id="previmgbtn"><i class="fa-regular fa-circle-up"></i></button>
-        <button id="nextimgbtn"><i class="fa-regular fa-circle-up"></i></button>
+        <h2 id="servicesubheading">Schreib uns einfach eine kurze Nachricht in der du uns erzählst, was wir für dich verwirklichen dürfen.</h2>
+        <button class="button" id="calltoactionbutton">Jetzt buchen</button>
       </div>
     </div>
-  </div>
 
-  <div id="contactsection" class="contact">
-    <div class="headingframe">
-      <img src="../assets/kontaktheading.svg" alt="" id="bgheading">
-      <h1 id="heading">Kontakt aufbauen</h1>
-    </div>
-    <div  class="contactinputs">
-      <div class="contactinputsleft">
-        <input type="email" name="Email" placeholder="Email" required class="inputs emailinput">
-        <input type="name" name="Nachname" placeholder="Name" class="inputs lastname">
-        <input type="Firstname" name="Vorname" placeholder="Vorname" class="inputs firstname">
-        <input type="name" name="companyname" placeholder="Firmenname" >
+    <div class="clients">
+      <div class="headingframe">
+        <img src="../assets/kundenheading.svg" alt="" id="bgheading">
+        <h1 id="heading">Das sagen unsere Kunden</h1>
       </div>
-      <div class="contactinputsright">
-        <div class="messageframe">
-          <p>Deine Nachricht...</p>
-          <textarea name="Message"  cols="30" rows="10" maxlength="2000" id="message" placeholder="schreibe deine Nachricht hier..."></textarea>
+      <div class="clientsliderouterframe">
+        <div class="clientsliderframe">
+          <div id="clientslider" class="clientslider">
+            <div class="slide blueslide">
+              <div class="slidetxt">
+                <h1>“Lorem Ipsum typewriter font helvetica qutoe of Max Mustermann und so weiter und sofort”</h1>
+                <h3>Dagmar Gerigk, Leadership Coach, Autor und Writer</h3>
+              </div>
+              <div class="slideimgbg blueslideimgbg">
+                <img src="../assets/DagmarGerigkclientcardimg.png" alt="">
+              </div>
+            </div>
+            <div class="slide yellowslide">
+              <div class="slidetxt">
+                <h1></h1>
+                <h3></h3>
+              </div>
+              <div class="slideimgbg yellowslideimgbg">
+                <img src="" alt="">
+              </div>
+            </div>
+            <div class="slide greenslide">
+              <div class="slidetxt">
+                <h1></h1>
+                <h3></h3>
+              </div>
+              <div class="slideimgbg greenslideimgbg">
+                <img src="" alt="">
+              </div>
+            </div>
+          </div>
         </div>
-        <button class="button sendbutton">senden <i class="fa-regular fa-paper-plane"></i></button>
+        <div class="slidercontrols">
+          <button id="previmgbtn"><i class="fa-regular fa-circle-up"></i></button>
+          <button id="nextimgbtn"><i class="fa-regular fa-circle-up"></i></button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <footer>
-    <div class="footersection1">
-      <div class="footerlogomailtel">
-        <a href="../index.html"><img src="../assets/RolupLogowhite.svg" alt="" id="footerlogo"></a>
-        <div class="telandmail"><p>Tel:</p><p id="footertel">+49 123 4567890</p></div>
-        <div class="telandmail"><p>Mail:</p><p id="footeremail">kontakt@rolup.de</p></div>
+    <div id="contactsection" class="contact">
+      <div class="headingframe">
+        <img src="../assets/kontaktheading.svg" alt="" id="bgheading">
+        <h1 id="heading">Kontakt aufnehmen</h1>
       </div>
-      <div class="footersocial">
-        <h2>Soziale Netzwerke</h2>
-        <a href="https://linkedin.com" target="_blank" id="linkedinlink"><i class="fa-brands fa-linkedin socialicon"></i>linkedIn</a>
-        <a href="" target="_blank" id="instagramlink"><i class="fa-brands fa-instagram socialicon"></i>Instagram</a>
-        <a href="https://www.youtube.com/channel/UCNaw1HETMFbHbRhs4PcM6iA" target="_blank" id="youtubelink"><i class="fa-brands fa-youtube socialicon"></i>YouTube</a>
-      </div>
-      <div class="footernavigation">
-        <h2>Navigation</h2>
-        <a href="../index.html" id="footerlinkhome">Home</a>
-        <a href="../code/about.html" id="footerlinkabout">Über uns</a>
-        <a href="../code/projects.html" id="footerlinkprojects">Projects</a>
-      </div>
-      <div class="footerlegal">
-        <h2>Rechtliches</h2>
-        <a href="" id="footerlinkAGB">AGB</a>
-        <a href="" id="footerlinkprivacypolicy">Datenschutzerklärung</a>
-        <a href="" id="footerlinkprojectsimpressum">Impressum</a>
-      </div>
+      <form action="send_email.php" class="contactinputs" onsubmit="return validate();">
+        <div class="contactinputsleft">
+          <input contenteditable="plaintext-only" type="email" name="Email" placeholder="*Email" required id="emailinput" class="inputs emailinput">
+          <div id="error-txt" class="error-txt"><p>Email erforderlich</p></div>
+          <input contenteditable="plaintext-only" type="text" name="Nachname" placeholder="*Name" id="lastname" class="inputs lastname">
+          <div id="error-txt" class="error-txt"><p>Nachname erforderlich</p></div>
+          <input contenteditable="plaintext-only" type="text" name="Vorname" placeholder="*Vorname" id="firstname" class="inputs firstname">
+          <div id="error-txt" class="error-txt"><p>Vorname erforderlich</p></div>
+          <input type="tel" name="phone" placeholder="+491234567890" id="phonenumber" class="inputs phonenumber">
+          <div id="error-txt" class="error-txt"><p>ungültige Rufnummer</p></div>
+        </div>
+        <div class="contactinputsright">
+          <div class="messageframe">
+            <p>Deine Nachricht...</p>
+            <textarea name="Message" type="" cols="1" rows="10" maxlength="1500" id="message" placeholder="*schreibe deine Nachricht hier..."></textarea>
+            <div id="error-txt" class="error-txt"><p>Nachricht erforderlich</p></div>
+          </div>
+          <button type="submit" class="button sendbutton">senden <i class="fa-regular fa-paper-plane"></i></button>
+        </div>
+      </form>
     </div>
-    <div class="footersection2">
-      <hr class="devideline">
-      <div>
-        <p>@rolup.de</p>
-        <a href="" id="footerAGBlink">AGB</a>
-        <a href="" id="footerpolicylink">privacy policy</a>
-        <a href="" id="footerimpressumlink">Impressum</a>
+
+    <footer>
+      <div class="footersection1">
+        <div class="footerlogomailtel">
+          <a href="../index.html"><img src="../assets/RolupLogowhite.svg" alt="" id="footerlogo"></a>
+          <div class="telandmail"><p>Tel:</p><p id="footertel">+49 123 4567890</p></div>
+          <div class="telandmail"><p>Mail:</p><p id="footeremail">kontakt@rolup.de</p></div>
+        </div>
+        <div class="footersocial">
+          <h2>Soziale Netzwerke</h2>
+          <a href="https://linkedin.com" target="_blank" id="linkedinlink"><i class="fa-brands fa-linkedin socialicon"></i>linkedIn</a>
+          <a href="" target="_blank" id="instagramlink"><i class="fa-brands fa-instagram socialicon"></i>Instagram</a>
+          <a href="https://www.youtube.com/channel/UCNaw1HETMFbHbRhs4PcM6iA" target="_blank" id="youtubelink"><i class="fa-brands fa-youtube socialicon"></i>YouTube</a>
+        </div>
+        <div class="footernavigation">
+          <h2>Navigation</h2>
+          <a href="../index.html" id="footerlinkhome">Home</a>
+          <a href="../code/about.html" id="footerlinkabout">Über uns</a>
+          <a href="../code/projects.html" id="footerlinkprojects">Projects</a>
+        </div>
+        <div class="footerlegal">
+          <h2>Rechtliches</h2>
+          <a href="" id="footerlinkAGB">AGB</a>
+          <a href="" id="footerlinkprivacypolicy">Datenschutzerklärung</a>
+          <a href="" id="footerlinkprojectsimpressum">Impressum</a>
+        </div>
       </div>
-    </div>
-  </footer>
-  
-  <script src="../code/index.js"></script>
-</body>
+      <div class="footersection2">
+        <hr class="devideline">
+        <div>
+          <p>@rolup.de</p>
+          <a href="" id="footerAGBlink">AGB</a>
+          <a href="" id="footerpolicylink">privacy policy</a>
+          <a href="" id="footerimpressumlink">Impressum</a>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="../code/index.js"></script>
+  </body>
 </html>
 
