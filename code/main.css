@@ -74,17 +74,7 @@ header{
   font-size: 16px;
 }
 .headerbutton{
-  /* sizing */
-  width: 130px;
-  height: 40px;
-  border-radius: 10px;
-  /* text */
-  font-size: 16px;
-  color: #fff;
-  /* button style */
-  background-color: #0066FF;
-  border: none;
-  cursor: pointer;
+  display: none;
 }
 .headerbutton:hover{
   /* cursor */
@@ -238,4 +228,140 @@ footer p{
   justify-content: space-between;
   /* positioning */
   margin: 0px auto;
+}
+
+@media only screen and (max-width: 600px){
+  header{
+    /* content alignment */
+    padding: 0.6rem 1rem;
+  }
+  #headerlogo{
+    /* size */
+    height: 25px;
+  }
+  .headerlinksandicon{
+    /* sizing */
+    width: unset;
+    height: fit-content;
+    min-width: 200px;
+    /* content alignment */
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .headerlinks{
+    /* text */
+    font-size: 12px;
+  }
+  .headerbutton{
+    /* sizing */
+    width: 100px;
+    height: 25px;
+    border-radius: 8px;
+    /* text */
+    font-size: 14px;
+  }
+  .headerbutton:hover{
+    /* cursor */
+    cursor: pointer;
+    /* transformation */
+    transform: scale(1.02);
+    transition: 0.2s;
+  }
+  .headerlinks a:hover{
+    /* text */
+    color: #0066FF;
+  }
+  #darklightmodeiconsvg{
+    width: 25px;
+    height: 25px;
+    border-radius: 4px;
+  }
+
+  footer{
+    /* sizing */
+    height: 545px;
+    /* positioning */
+    margin-top: 0px;
+    /* content alignment */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+  }
+  .footersection1{
+    /* content alignment */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 120px 120px 120px;
+    row-gap: 50px;
+  }
+  footer h2{
+    /* text */
+    font-size: 20px;
+    text-align: left;
+  }
+  footer p{
+    /* text */
+    font-size: 16px;
+  }
+  .footersocial a, .footernavigation a, .footerlegal a{
+    /* text */
+    font-size: 16px;
+  }
+  .footerlogomailtel{
+    /* content alignment */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    /* positioning */
+    margin-right: 0px;
+  }
+  #footerlogo{
+    /* sizing */
+    object-fit: contain;
+    width: 120px;
+  }
+  .telandmail{
+    /* sizing */
+    width: 170px;
+  }
+  .footersocial, .footernavigation, .footerlegal{
+    /* content alignment */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .footersocial{
+    /* positioning */
+    grid-row: 2 / span 1;
+  }
+  .footernavigation{
+    /* positioning */
+    grid-row: 2 / span 2;
+  }
+  .footerlegal{
+    /* positioning */
+    grid-row: 3 / span 1;
+  }
+  .socialicon{
+    /* style */
+    color: #fff;
+    /* positioning */
+    margin-right: 9px;
+  }
+  .fa-youtube{
+    /* positioning */
+    margin-right: 5px;
+  }
+  .footersection2 p, .footersection2 a{
+    /* text */
+    font-size: 10px;
+  }
+  .footersection2 div{
+    /* sizing */
+    width: 90%;
+  }
 }

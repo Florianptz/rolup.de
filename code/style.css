@@ -322,10 +322,6 @@ body{
   text-align: left;
   color: #fff;
 }
-.yellowslide{
-  /* style */
-  background-color: #FFE978;
-}
 .slideimgbg{
   /* sizing */
   height: 100%;
@@ -343,6 +339,10 @@ body{
   /* sizing */
   object-fit: contain;
   height: 95%;
+}
+.yellowslide{
+  /* style */
+  background-color: #FFE978;
 }
 .yellowslideimgbg{
   /* style */
@@ -399,6 +399,7 @@ body{
   border: none;
   border-bottom: 2px solid #A2A2A2;
   background-color: transparent;
+  transition: 1s;
   /* text */
   text-align: left;
   font-size: 20px;
@@ -461,6 +462,7 @@ body{
   border-radius: 2px;
   background-color: transparent;
   transition: none;
+  transition: 0.5s;
   /* text */
   text-align: left;
   font-size: 16px;
@@ -511,4 +513,359 @@ body{
   width: 100%;
   /* display */
   display: none;
+}
+
+@media only screen and (max-width: 600px){
+  .landing{
+    /* sizing */
+    width: 85%;
+    /* positioning */
+    margin: 30px auto 0px auto;
+    /* content alignment */
+    flex-direction: column;
+  }
+  .landingtext{
+    /* sizing */
+    width: 100%;
+    height: fit-content;
+    /* content alignment */
+    display: grid;
+    gap: 10px;
+    /* positioning */
+    margin: auto 0px auto 0px;
+  }
+  .landingtext h1{
+    /* text */
+    font-size: 38px;
+  }
+  .landingtext h3{
+    /* text */
+    font-size: 18px;
+    font-weight: 500;
+    /* positioning */
+    margin-top: 10px;
+  }
+  .button{
+    /* sizing */
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    /* text */
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .landingbutton{
+    /* positioning */
+    margin-top: 20px;
+  }
+  .landingtext a{
+    /* sizing */
+    border-radius: 10px;
+  }
+  .illustrations{
+    /* sizing */
+    width: 100%;
+    min-width: 300px;
+    height: fit-content;
+    /* positioning */
+    margin: 35px auto 0px auto;
+  }
+  .illustrations img{
+    /* sizing */
+    width: 100%;
+  }
+  
+  .services{
+    /* sizing */
+    width: 83%;
+    /* positioning */
+    margin: 64px auto 0px auto;
+  }
+  .headingframe{
+    /* content alignment */
+    margin-left: 0px;
+  }
+  #bgheading{
+    /* sizing */
+    height: 73px;
+    margin-left: -10px;
+  }
+  #heading{
+    /* size */
+    width: fit-content;
+    /* text */
+    font-size: 25px;
+    text-align: left;
+    /* positioning */
+    margin: 30px 0px 0px 0px;
+  }
+  .servicesandcalltoaction{
+    /* sizing */
+    width: 100%;
+    /* positioning */
+    margin-top: 20px;
+  }
+  .servicecards{
+    /* sizing */
+    width: 100%;
+    /* content alignment */
+    flex-direction: column;
+    gap: 18px;
+  }
+  .card{
+    /* sizing */
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+  }
+  .cardcontent{
+    /* sizing */
+    width: 83%;
+    height: 80%;
+    /* content alignment */
+    gap: 10px;
+  }
+  .cardcontent img{
+    /* sizing */
+    height: 48px;
+  }
+  .cardcontent h2{
+    /* text */
+    font-size: 20px;
+  }
+  .cardcontent p{
+    /* sizing */
+    width: 100%;
+    /* text */
+    font-size: 16px;
+  }
+  #servicesubheading{
+    /* sizing */
+    width: 95%;
+    /* text */
+    font-size: 25px;
+    /* positioning */
+    margin: 50px auto 0px auto;
+  }
+  #calltoactionbutton{
+    /* positioning */
+    margin-top: 25px;
+  }
+  #servicesubheading a{
+    /* sizing */
+    border-radius: 10px;
+  }
+
+  .clients{
+    /* sizing */
+    width: 100%;
+    /* positioning */
+    margin: 50px auto 0px auto;
+  }
+  .clientsheadingframe{
+    /* size */
+    width: 83%;
+    /* positioning */
+    margin: 0px auto 0px auto;
+  }
+  .clientsheading{
+    /* text */
+    letter-spacing: -1px;
+  }
+  .clientsliderouterframe{
+    /* size */
+    width: 100%;
+    /* positioning */
+    margin: 0px auto;
+    /* content alignment */
+    position: unset;
+  }
+  .clientsliderframe{
+    /* size */
+    width: 100%;
+    /* content alignment */
+    overflow-x: scroll;
+    /* positioning */
+    margin: 0px auto;
+  }
+  .clientslider{
+    /* size */
+    width: fit-content;
+    /* positioning */
+    margin: 0px auto;
+    /* content alignment */
+    display: flex;
+    gap: 20px;
+    padding: 0px 20px;
+  }
+  .slidercontrols{
+    display: none;
+  }
+  .slide{
+    /* sizing */
+    min-width: unset;
+    max-width: unset;
+    width: 255px;
+    height: 437px;
+    border-radius: 25px;
+    /* content alignment */
+    display: flex;
+    flex-grow: 0;
+    flex-direction: column-reverse;
+    justify-content: center;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 50px 25px;
+  }
+  .slidetxt{
+    /* sizing */
+    width: 100%;
+    /* content alignment */
+    gap: 30px;
+    /* positioning */
+    margin: 20px auto 0px auto;
+  }
+  .slidetxt h1{
+    /* text */
+    font-size: 22px;
+    line-height: 130%;
+  }
+  .slidetxt h3{
+    /* text */
+    font-size: 15px;
+  }
+  .slideimgbg{
+    /* sizing */
+    height: 130px;
+    width: 150px;
+    min-width: unset;
+    max-width: unset;
+    border-radius: 50%;
+    /* content alignment */
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px 0px 0px;
+    overflow: hidden;
+    /* positioning */
+    margin: 0px auto;
+  }
+  .slideimgbg img{
+    /* sizing */
+    object-fit: contain;
+    height: unset;
+    width: 75%;
+  }
+
+  .contact{
+    /* sizing */
+    width: 83%;
+    /* positioning */
+    margin: 50px auto 100px auto;
+  }
+  .contactinputs{
+    /* sizing */
+    width: 100%;
+    /* content alignment */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    /* positioning */
+    margin: 25px auto 0px auto;
+  }
+  .contactinputsleft{
+    /* sizing */
+    width: 100%;
+    height: 300px;
+    /* content alignment */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  .contactinputs input{
+    /* sizing */
+    width: 88%;
+    /* style */
+    border: none;
+    border-bottom: 2px solid #A2A2A2;
+    background-color: transparent;
+    transition: 1s;
+    /* text */
+    text-align: left;
+    font-size: 16px;
+    color: var(--primarytxt-clr);
+    /* content alignment */
+    padding: 15px 4% 15px 4%;
+  }
+  .contactinputs input::placeholder{
+    /* text */
+    font-size: 18px;
+    font-weight: 200;
+    color: var(--secondarytxt-clr);
+  }
+  .contactinputs input:hover{
+    /* sizing */
+    width: 90%;
+    transition: 0.2s;
+    /* style */
+    border-bottom: 2px solid #0066FF;
+  }
+  .contactinputs input:focus{
+    /* sizing */
+    width: 92%;
+    transition: 0.5s;
+    /* style */
+    border-bottom: 2px solid #0066FF;
+    outline: none;
+  }
+  .messageframe{
+    /* sizing */
+    width: 100%;
+    height: 200px;
+    /* content alignment */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .messageframe p{
+    /* text */
+    font-size: 16px;
+    /* positioning */
+    margin-left: 4%;
+  }
+  #message{
+    /* sizing */
+    width: 92%;
+    /* text */
+    text-align: left;
+    font-size: 16px;
+    /* content alignment */
+    padding: 3%;
+  }
+  #message::placeholder{
+    /* text */
+    font-size: 16px;
+    font-weight: 200;
+    color: var(--secondarytxt-clr);
+  }
+  .sendbutton{
+    /* sizing */
+    width: 155px;
+    height: 50px;
+    border-radius: 8px;
+    /* text */
+    font-size: 20px;
+    font-weight: 500;
+    /* positioning */
+    margin-top: 20px;
+  }
+  .error-txt p{
+    /* text */
+    font-size: 12px;
+    text-align: left;
+    color: #ff5353;
+  }
 }
