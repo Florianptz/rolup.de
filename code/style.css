@@ -789,6 +789,8 @@ body{
     width: 88%;
     /* style */
     border: none;
+    border-radius: 0px;
+    border-radius: none;
     border-bottom: 2px solid #A2A2A2;
     background-color: transparent;
     transition: 1s;
