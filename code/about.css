@@ -27,6 +27,8 @@
   --aboutcardsborder-clr: #dedede;
   /* personal cards box shadow */
   --aboutcardsboxshadow-clr: 0px 4px 8px 0px #afafaf7d;
+  /* personal cards description */
+  --personalcardsdescr-clr: #8a8a8a; 
 }
 
 .darkmode {
@@ -39,6 +41,7 @@
   --aboutcardsbg-clr: #6d6d6d70;
   --aboutcardsborder-clr: #6d6d6d;
   --aboutcardsboxshadow-clr: 0px 4px 8px 0px #8484847d;
+  --personalcardsdescr-clr: #d3d3d3; 
 }
 
 body{
@@ -90,19 +93,25 @@ body{
 
 .personalcardsframe{
   width: 75%;
-  height: fit-content;
   max-height: 100%;
-  display: flex;
-  justify-content: space-between;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
+.personalcards{
+  width: 100%;
+  height: fit-content;
+  max-height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
 .personalcard{
   width: 46%;
   height: 680px;
+  max-height: 100%;
   background-color: var(--aboutcardsbg-clr);
   border: 1px solid var(--aboutcardsborder-clr);
   border-radius: 35px;
@@ -149,10 +158,12 @@ body{
 
 .employeeposition{
   font-size: 30px;
+  color: var(--primarytxt-clr);
 }
 .employeename{
   font-size: 25px;
   font-weight: 500;
+
 }
 .employeedescription{
   font-size: 22px;
@@ -160,6 +171,7 @@ body{
   margin-top: 20px;
   line-height: 140%;
   overflow: scroll;
+  color: var(--personalcardsdescr-clr);
 }
 
 .headingframe {
@@ -185,6 +197,9 @@ body{
   /* positioning */
   position: absolute;
   margin: 85px 0px 0px 0px;
+}
+.valueheadingmobile{
+  display: none;
 }
 
 .valuecards {
@@ -230,4 +245,209 @@ body{
   font-weight: 400;
   text-align: center;
   color: var(--primarytxt-clr);
+}
+
+@media only screen and (max-width: 600px){
+  .subheader {
+    width: 100%;
+    height: 156px;
+  }
+  .subheader-content{
+    height: 100%;
+    overflow-x: hidden;
+    display: flex;
+    position: relative;
+  }
+  .subheader-content img{
+    object-fit: contain; 
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .subheadingtxt {
+    max-width: fit-content;
+    margin: 30px auto 0px auto;
+    text-align: center;
+  }
+  .subheadingtxt img {
+    height: 30px;
+    position: relative;
+    top: 8px;
+  }
+  .subheadingtxt h1 {
+    font-size: 30px;
+  }
+  .subheadingtxt h3 {
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .aboutus{
+    width: 100%;
+    height: 500px;
+    min-height: 500px;
+    max-height: 500px;
+    position: relative;
+    margin: 20px auto 0px auto;
+    overflow-x: hidden;
+  }
+  .bgforms{
+    object-fit: contain;
+    width: 150%;
+    margin: 0px auto;
+    max-width: unset;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .personalcardsframe{
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    overflow-x: scroll;
+  }
+  
+  .personalcards{
+    width: fit-content;
+    height: fit-content;
+    max-height: unset;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0px 3.5%;
+  }
+  
+  .personalcard{
+    width: 308px;
+    max-width: 100%;
+    height: 485px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  
+  .cardimgandtxt{
+    width: 88%;
+    height: 88%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .profilepic{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin: 0px auto;
+  }
+  
+  .personalcardtxt{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0px;
+    margin-top: 0px;
+    max-height: unset;
+  }
+
+  .personalcardtxt h2, h3, p{
+    line-height: 90%;
+  }
+  
+  .personalcardtxt h2{
+    font-size: 25px;
+  }
+
+  .personalcardtxt h3{
+    font-size: 20px;
+    margin-top: 5px;
+  }
+
+  .personalcardtxt p{
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  
+  .valueheadingdesktop{
+    display: none;
+  }
+  .valueheadingmobile{
+    display: block;
+  }
+  .headingframe {
+    /* size */
+    width: 100%;
+    /* positioning */
+    margin-top: 50px;
+  }
+  .headingframe img {
+    /* sizing */
+    object-fit: contain;
+    height: unset;
+  }
+  #heading {
+    /* text */
+    font-size: 25px;
+    /* positioning */
+    position: absolute;
+    margin: 43px 0px 0px 0px;
+  }
+
+  .valuecards {
+    width: 83%;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: unset;
+    grid-template-rows: unset;
+    gap: 20px;
+    margin: 20px auto 80px auto;
+  }
+
+  .valuecard {
+    place-self: center;
+    aspect-ratio: unset;
+    width: calc(100% - 30px);
+    height: fit-content;
+    max-height: 273px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-between;
+    box-shadow: 0px 2px 8px 3px #7d7d7d40;
+    border-radius: 30px;
+    padding: 35px 15px;
+  }
+
+  .valuecardicon {
+    height: 85px;
+  }
+
+  .valuecard h2 {
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .valuecard h3 {
+    width: 100%;
+    margin: 0px auto;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 110%;
+  }
 }
