@@ -33,8 +33,6 @@
 }
 
 body{
-  /* sizing */
-  min-height: 1000px;
   /* content alignment */
   display: flex;
   flex-direction: column;
@@ -271,4 +269,165 @@ body{
 .emptyprojectcompanycard{
   /* style */
   filter: blur(5px);
+}
+
+@media only screen and (max-width: 600px){
+  .project{
+    /* sizing */
+    width: 100%;
+    height: fit-content;
+    /* content alignment */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    /* positioning */
+    margin: 25px auto 35px auto;
+  }
+  .companycard{
+    /* sizing */
+    width: 83%;
+    height: 210px;
+    border-radius: 20px;
+    /* style */
+    box-shadow: 0px 0px 20px 2px var(--cardsbg-clr);
+    /* content alignment */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    /* positioning */
+    margin: 0px auto 0px auto;
+  }
+  .companycard p{
+    display: none;
+  }
+  .projectimpression{
+    /* sizing */
+    width: 83%;
+    height: fit-content;
+    min-height: 200px;
+    border-radius: 20px;
+    margin: 0px auto 0px auto;
+  }
+
+  .sportkaratewegbergwassenberg{
+    flex-direction: column-reverse;
+  }
+  .karatevideo{
+    /* size */
+    height: 400px;
+    /* positioning */
+    margin-top: -55px;
+    z-index: 0;
+  }
+  .h1andbuttovervideo{
+    /* content alignment */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .h1andbuttovervideo h1{
+    /* text */
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+  }
+  .h1andbuttovervideo h1 br{
+    display: none;
+  }
+  .linktofullvideo button{
+    /* sizing */
+    padding: 0px 20px;
+    height: 50px;
+    border-radius: 10px;
+    /* text */
+    font-size: 18px;
+  }
+  .playicon{
+    /* positioning */
+    margin-right: 10px;
+  }
+  @keyframes pulse {
+    0% {
+      box-shadow: 0px 0px 0px 0px #ffffff;
+    }
+    100% {
+      box-shadow: 0px 0px 0px 15px #ffffff00;
+    }
+  }
+  .karatecard{
+    justify-content: unset;
+  }
+  .karatelogo{
+    /* sizing */
+    object-fit: contain;
+    width: 42%;
+    /* positioning */
+    margin-top: 20px;
+  }
+
+  .imagesliderframe{
+    /* size */
+    width: 100%;
+    height: fit-content;
+    border-radius: 0px;
+    /* content alignment */
+    position: relative;
+    overflow: hidden;
+    /* positioning */
+    margin-top: 30px;
+  }
+  .imageslider{
+    /* sizing */
+    height: fit-content;
+    /* content alignment */
+    display: flex;
+  }
+  .slide{
+    /* sizing */
+    min-width: 100%;
+    /* content alignment */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+  }
+  .slide img{
+    /* sizing */
+    object-fit: contain;
+    width: 90%;
+    height: 100%;
+    /* positioning */
+    margin: auto 0px auto 0px;
+  }
+  .slide2 img, .slide3 img{
+    /* size */
+    object-fit: contain;
+    height: 300px;
+  }
+  .slidecontrols{
+    /* sizing */
+    width: 90%;
+  }
+  #previmgbtn i, #nextimgbtn i{
+    /* sizing */
+    font-size: 40px;
+    /* style */
+    color: var(--secondarytxt-clr);
+    backdrop-filter: blur(10px);
+  }
+  #previmgbtn i{
+    /* sizing */
+    rotate: -90deg;
+  }
+  #nextimgbtn i{
+    /* sizing */
+    rotate: 90deg;
+  }
+  .vamoslogo{
+    
+  }
 }
