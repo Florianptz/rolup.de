@@ -257,9 +257,6 @@ body{
   /* sizing */
   rotate: 90deg;
 }
-.vamoslogo{
-  
-}
 
 .emptyprojectimpression{
   /* style */
@@ -414,20 +411,6 @@ body{
   }
   #previmgbtn i, #nextimgbtn i{
     /* sizing */
-    font-size: 40px;
-    /* style */
-    color: var(--secondarytxt-clr);
-    backdrop-filter: blur(10px);
-  }
-  #previmgbtn i{
-    /* sizing */
-    rotate: -90deg;
-  }
-  #nextimgbtn i{
-    /* sizing */
-    rotate: 90deg;
-  }
-  .vamoslogo{
-    
+    font-size: 35px;
   }
 }
