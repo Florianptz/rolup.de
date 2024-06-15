@@ -38,6 +38,9 @@ body{
   flex-direction: column;
   /* style */
   background-color: var(--background-clr);
+  /* sizing */
+  max-width: 1500px;
+  margin: 0px auto 0px auto;
 }
 
 .project{
@@ -101,6 +104,9 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.videobanner video::-webkit-media-controls {
+  display: none;
 }
 .h1andbuttovervideo{
   /* sizing */
@@ -318,6 +324,7 @@ body{
     /* positioning */
     margin-top: -55px;
     z-index: 0;
+    
   }
   .h1andbuttovervideo{
     /* content alignment */

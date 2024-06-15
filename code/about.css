@@ -50,6 +50,9 @@ body{
   flex-direction: column;
   /* style */
   background-color: var(--background-clr);
+  /* sizing */
+  max-width: 1500px;
+  margin: 0px auto 0px auto;
 }
 
 .subheader {
