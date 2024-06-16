@@ -144,39 +144,40 @@ if (window.innerWidth > 600){
 
 // CONTACT FORM
 
-function validate() { 
-  let email = 
-      document.getElementById("emailinput").value; 
-  let lastname = 
-      document.getElementById("lastname").value; 
-  let firstname = 
-      document.getElementById("firstname").value; 
-  let message = 
-      document.getElementById("message").value; 
-  let error_message = 
-      document.getElementById("error-txt"); 
+document.getElementById('contactform').addEventListener('submit', function(event) {
+  let email = document.getElementById('emailinput').value;
+  let message = document.getElementById('message').value;
+  let phone = document.getElementById('phonenumber').value;
+  let errorDiv = document.getElementById('error-txt');
 
-  error_message.style.padding = "10px"; 
+  let errorMessage = '';
+  
+  if (!email || !validateEmail(email)) {
+      errorMessage += 'Email erforderlich.<br>';
+  }
 
-  let errors = []; 
+  if (phone && !validatePhone(phone)) {
+    errorMessage += 'ungültige Rufnummer.<br>';
+  }
+  
+  if (!message) {
+      errorMessage += 'Bitte geben Sie eine Nachricht ein.<br>';
+  }
 
-  if (email.indexOf("@") == -1 || email.length < 6) { 
-      errors.push( 
-          "ungültige Email-Adresse");} 
-  if (lastname.length < 5) { 
-      errors.push("Nachname erforderlich");} 
-  if (firstname.length < 5) { 
-      errors.push("Vorname erforderlich");} 
-  if (message.length <= 10) { 
-      errors.push( 
-          "Please Enter More Than 10 Characters");} 
-  if (errors.length > 0) { 
-      error_message.innerHTML = 
-          errors.join("<br>"); 
-      return false;} 
-  else { 
-      alert( 
-          "Ihre Nachricht wurde erfolgreich abgeschickt"); 
-      return true;}}
+  if (errorMessage) {
+      event.preventDefault();
+      errorDiv.innerHTML = errorMessage;
+  }
+});
+
+function validateEmail(email) {
+  const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+  return re.test(String(email).toLowerCase());
+}
+
+function validatePhone(phone) {
+  const re = /^\+?(\d.*){10,}$/;
+  return re.test(String(phone));
+}
 
 // CONTACT FORM

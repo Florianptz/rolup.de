@@ -83,8 +83,8 @@
           <div id="clientslider" class="clientslider">
             <div class="slide blueslide">
               <div class="slidetxt">
-                <h1>“Lorem Ipsum typewriter font helvetica qutoe of Max Mustermann und so weiter und sofort”</h1>
-                <h3>Dagmar Gerigk, Leadership Coach, Autor und Writer</h3>
+                <h1>„Jedes Mal wieder kreativ, zuverlässig, professionell - genau so, wie ich es als Unternehmerin schätze.”</h1>
+                <h3>Dagmar Gerigk - Leadership Coach, Autor und Speaker</h3>
               </div>
               <div class="slideimgbg blueslideimgbg">
                 <img src="../assets/DagmarGerigkclientcardimg.png" alt="">
@@ -122,29 +122,26 @@
         <img src="../assets/kontaktheading.svg" alt="" id="bgheading">
         <h1 id="heading">Kontakt aufnehmen</h1>
       </div>
-      <form action="send_email.php" class="contactinputs" onsubmit="return validate();">
+      <form action="process.php" method="post" class="contactinputs" id="contactform">
         <div class="contactinputsleft">
           <input contenteditable="plaintext-only" type="email" name="Email" placeholder="*Email" required id="emailinput" class="inputs emailinput">
-          <div id="error-txt" class="error-txt"><p>Email erforderlich</p></div>
           <input contenteditable="plaintext-only" type="text" name="Nachname" placeholder="*Name" id="lastname" class="inputs lastname">
-          <div id="error-txt" class="error-txt"><p>Nachname erforderlich</p></div>
           <input contenteditable="plaintext-only" type="text" name="Vorname" placeholder="*Vorname" id="firstname" class="inputs firstname">
-          <div id="error-txt" class="error-txt"><p>Vorname erforderlich</p></div>
           <input type="tel" name="phone" placeholder="+491234567890" id="phonenumber" class="inputs phonenumber">
-          <div id="error-txt" class="error-txt"><p>ungültige Rufnummer</p></div>
         </div>
         <div class="contactinputsright">
           <div class="messageframe">
             <p>Deine Nachricht...</p>
             <textarea name="Message" type="" cols="1" rows="10" maxlength="1500" id="message" placeholder="*schreibe deine Nachricht hier..."></textarea>
-            <div id="error-txt" class="error-txt"><p>Nachricht erforderlich</p></div>
           </div>
           <button type="submit" class="button sendbutton">senden <i class="fa-regular fa-paper-plane"></i></button>
         </div>
+        <div id="error-txt" class="error-txt"></div>
       </form>
     </div>
 
     <footer>
+      <link rel="stylesheet" href="../code/main.css">
       <div class="footersection1">
         <div class="footerlogomailtel">
           <a href="../index.html"><img src="../assets/RolupLogowhite.svg" alt="" id="footerlogo"></a>
@@ -176,7 +173,7 @@
           <p>@rolup.de</p>
           <a href="" id="footerAGBlink">AGB</a>
           <a href="" id="footerpolicylink">privacy policy</a>
-          <a href="" id="footerimpressumlink">Impressum</a>
+          <a href="../code/impressum.html" id="footerimpressumlink">Impressum</a>
         </div>
       </div>
     </footer>
