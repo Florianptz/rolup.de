@@ -167,6 +167,28 @@ document.getElementById('contactform').addEventListener('submit', function(event
   if (errorMessage) {
       event.preventDefault();
       errorDiv.innerHTML = errorMessage;
+  } else {
+    errorDiv.innerHTML = '';
+    let xhr = new XMLHttpRequest();
+    xhr.open('POST', 'process.php', true);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+                successDiv.innerHTML = 'Danke! Ihre Nachricht wurde gesendet.';
+                document.getElementById('contactinputs').reset();
+            } else {
+                errorDiv.innerHTML = 'Hoppla! Etwas ist schief gelaufen und Ihre Nachricht konnte nicht gesendet werden.';
+            }
+        }
+    };
+    
+    xhr.send('firstname=' + encodeURIComponent(document.getElementById('firstname').value) +
+             '&lastname=' + encodeURIComponent(document.getElementById('lastname').value) +
+             '&emailinput=' + encodeURIComponent(email) +
+             '&phonenumber=' + encodeURIComponent(phone) +
+             '&message=' + encodeURIComponent(message));
   }
 });
 
