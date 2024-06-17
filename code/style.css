@@ -1,4 +1,4 @@
-*{
+* {
   /* text */
   color: var(--primarytxt-clr);
   font-family: Arial, Helvetica, sans-serif;
@@ -18,9 +18,9 @@
   /* text (headings and titles) */
   --primarytxt-clr: #000;
   /* subtitles (small text) */
-  --secondarytxt-clr: #8A8A8A;
+  --secondarytxt-clr: #8a8a8a;
   /* service cards background */
-  --cardsbg-clr: #EFEFEF;
+  --cardsbg-clr: #efefef;
 }
 
 .darkmode {
@@ -29,10 +29,10 @@
   --boxshadow-header: none;
   --primarytxt-clr: #fff;
   --secondarytxt-clr: #888;
-  --cardsbg-clr: #1C1C1C;
+  --cardsbg-clr: #1c1c1c;
 }
 
-body{
+body {
   /* style */
   background-color: var(--background-clr);
   /* sizing */
@@ -40,7 +40,7 @@ body{
   margin: 0px auto 0px auto;
 }
 
-.landing{
+.landing {
   /* sizing */
   width: 90%;
   height: fit-content;
@@ -50,7 +50,7 @@ body{
   display: flex;
   justify-content: space-between;
 }
-.landingtext{
+.landingtext {
   /* sizing */
   width: 50%;
   height: 400px;
@@ -59,14 +59,14 @@ body{
   /* positioning */
   margin: auto 0px auto 0px;
 }
-.landingtext h1{
+.landingtext h1 {
   /* text */
   color: var(--primarytxt-clr);
   text-align: left;
   font-size: 60px;
   font-weight: bolder;
 }
-.landingtext h3{
+.landingtext h3 {
   /* text */
   color: var(--secondarytxt-clr);
   text-align: left;
@@ -75,7 +75,7 @@ body{
   /* positioning */
   margin-top: 10px;
 }
-.button{
+.button {
   /* sizing */
   width: 214px;
   height: 65px;
@@ -85,27 +85,27 @@ body{
   font-weight: 600;
   color: #fff;
   /* button style */
-  background-color: #0066FF;
+  background-color: #0066ff;
   border: none;
 }
-.landingbutton{
-    /* positioning */
+.landingbutton {
+  /* positioning */
   margin-top: 35px;
 }
-.landingtext a{
+.landingtext a {
   /* sizing */
   width: fit-content;
   height: fit-content;
   border-radius: 15px;
 }
-.button:hover{
+.button:hover {
   /* cursor */
   cursor: pointer;
   /* transformation */
   transform: scale(1.02);
   transition: 0.2s;
 }
-.illustrations{
+.illustrations {
   /* sizing */
   width: 44%;
   min-width: 450px;
@@ -113,48 +113,48 @@ body{
   /* positioning */
   margin: auto 0px auto 0px;
 }
-.illustrations img{
+.illustrations img {
   /* sizing */
   object-fit: contain;
   width: 100%;
 }
 
-.services{
+.services {
   /* sizing */
   width: 90%;
   /* positioning */
   margin: 120px auto 0px auto;
 }
-.headingframe{
+.headingframe {
   /* content alignment */
   display: grid;
 }
-#bgheading{
+#bgheading {
   /* sizing */
   object-fit: contain;
   height: 180px;
 }
-#heading{
+#heading {
   /* text */
   font-size: 50px;
   /* positioning */
   position: absolute;
   margin: 85px 0px 0px 22px;
 }
-.servicesandcalltoaction{
+.servicesandcalltoaction {
   /* sizing */
   width: 100%;
   /* positioning */
   margin-top: 10px;
 }
-.servicecards{
+.servicecards {
   /* sizing */
   width: 100%;
   /* content alignment */
   display: flex;
   justify-content: space-between;
 }
-.card{
+.card {
   /* sizing */
   width: 31.5%;
   height: 340px;
@@ -164,7 +164,7 @@ body{
   /* content alignment */
   display: grid;
 }
-.cardcontent{
+.cardcontent {
   /* sizing */
   width: 83%;
   height: 80%;
@@ -176,18 +176,18 @@ body{
   /* positioning */
   margin: auto;
 }
-.cardcontent img{
+.cardcontent img {
   /* sizing */
   object-fit: contain;
   height: 55px;
 }
-.cardcontent h2{
+.cardcontent h2 {
   /* text */
   font-size: 36px;
   text-align: left;
   color: var(--primarytxt-clr);
 }
-.cardcontent p{
+.cardcontent p {
   /* sizing */
   width: 90%;
   /* text */
@@ -196,7 +196,7 @@ body{
   font-weight: 500;
   color: var(--secondarytxt-clr);
 }
-#servicesubheading{
+#servicesubheading {
   /* sizing */
   width: 75%;
   /* text */
@@ -205,24 +205,24 @@ body{
   /* positioning */
   margin: 60px auto 0px auto;
 }
-#calltoactionbutton{
+#calltoactionbutton {
   /* positioning */
   margin-top: 35px;
 }
-#servicesubheading a{
+#servicesubheading a {
   /* sizing */
   width: fit-content;
   height: fit-content;
   border-radius: 15px;
 }
 
-.clients{
+.clients {
   /* sizing */
   width: 90%;
   /* positioning */
   margin: 90px auto 0px auto;
 }
-.clientsliderouterframe{
+.clientsliderouterframe {
   /* size */
   width: 80%;
   /* positioning */
@@ -230,7 +230,7 @@ body{
   /* content alignment */
   position: relative;
 }
-.clientsliderframe{
+.clientsliderframe {
   /* size */
   width: calc(100% - 50px);
   /* content alignment */
@@ -238,7 +238,7 @@ body{
   /* positioning */
   margin: 0px auto;
 }
-.clientslider{
+.clientslider {
   /* size */
   width: 100%;
   /* positioning */
@@ -246,7 +246,7 @@ body{
   /* content alignment */
   display: flex;
 }
-.slidercontrols{
+.slidercontrols {
   /* size */
   width: 100%;
   height: 100%;
@@ -258,7 +258,8 @@ body{
   position: absolute;
   top: 0;
 }
-#previmgbtn, #nextimgbtn{
+#previmgbtn,
+#nextimgbtn {
   /* sizing */
   height: fit-content;
   width: fit-content;
@@ -276,29 +277,31 @@ body{
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
-#previmgbtn:hover, #nextimgbtn:hover{
+#previmgbtn:hover,
+#nextimgbtn:hover {
   /* style */
   transform: scale(1.08);
   transition: 0.2s;
   /* cursor */
   cursor: pointer;
 }
-#previmgbtn i, #nextimgbtn i{
+#previmgbtn i,
+#nextimgbtn i {
   /* sizing */
   font-size: 40px;
   /* style */
   color: var(--secondarybg-clr);
   backdrop-filter: blur(10px);
 }
-#previmgbtn i{
+#previmgbtn i {
   /* sizing */
   rotate: -90deg;
 }
-#nextimgbtn i{
+#nextimgbtn i {
   /* sizing */
   rotate: 90deg;
 }
-.slide{
+.slide {
   /* sizing */
   min-width: calc(100% - 100px);
   height: 460px;
@@ -309,7 +312,7 @@ body{
   gap: 20px;
   padding: 50px;
 }
-.slidetxt{
+.slidetxt {
   /* sizing */
   width: 58%;
   height: fit-content;
@@ -320,12 +323,13 @@ body{
   /* positioning */
   margin: auto 0px auto 0px;
 }
-.slidetxt h1, h3{
+.slidetxt h1,
+h3 {
   /* text */
   text-align: left;
   color: #fff;
 }
-.slideimgbg{
+.slideimgbg {
   /* sizing */
   height: 100%;
   width: 36%;
@@ -338,43 +342,43 @@ body{
   padding: 10px 10px 0px 10px;
   overflow: hidden;
 }
-.slideimgbg img{
+.slideimgbg img {
   /* sizing */
   object-fit: contain;
   height: 95%;
 }
-.yellowslide{
+.yellowslide {
   /* style */
-  background-color: #FFE978;
+  background-color: #ffe978;
 }
-.yellowslideimgbg{
+.yellowslideimgbg {
   /* style */
-  background-color: #FFF2B0;
+  background-color: #fff2b0;
 }
-.blueslide{
+.blueslide {
   /* style */
-  background-color: #8CB0E6;
+  background-color: #8cb0e6;
 }
-.blueslideimgbg{
+.blueslideimgbg {
   /* style */
-  background-color: #94BDFA;
+  background-color: #94bdfa;
 }
-.greenslide{
+.greenslide {
   /* style */
-  background-color: #83BE7A;
+  background-color: #83be7a;
 }
-.greenslideimgbg{
+.greenslideimgbg {
   /* style */
-  background-color: #95D18C;
+  background-color: #95d18c;
 }
 
-.contact{
+.contact {
   /* sizing */
   width: 90%;
   /* positioning */
   margin: 120px auto 200px auto;
 }
-.contactinputs{
+.contactinputs {
   /* sizing */
   width: 93%;
   /* content alignment */
@@ -384,7 +388,7 @@ body{
   /* positioning */
   margin: 25px auto 0px auto;
 }
-.contactinputsleft{
+.contactinputsleft {
   /* sizing */
   width: 100%;
   height: 300px;
@@ -395,12 +399,12 @@ body{
   justify-content: space-between;
   overflow: hidden;
 }
-.contactinputs input{
+.contactinputs input {
   /* sizing */
   width: 85%;
   /* style */
   border: none;
-  border-bottom: 2px solid #A2A2A2;
+  border-bottom: 2px solid #a2a2a2;
   background-color: transparent;
   transition: 1s;
   /* text */
@@ -410,28 +414,28 @@ body{
   /* content alignment */
   padding: 15px 4% 15px 4%;
 }
-.contactinputs input::placeholder{
+.contactinputs input::placeholder {
   /* text */
   font-size: 18px;
   font-weight: 200;
   color: var(--secondarytxt-clr);
 }
-.contactinputs input:hover{
+.contactinputs input:hover {
   /* sizing */
   width: 88%;
   transition: 0.2s;
   /* style */
-  border-bottom: 2px solid #0066FF;
+  border-bottom: 2px solid #0066ff;
 }
-.contactinputs input:focus{
+.contactinputs input:focus {
   /* sizing */
   width: 92%;
   transition: 0.5s;
   /* style */
-  border-bottom: 2px solid #0066FF;
+  border-bottom: 2px solid #0066ff;
   outline: none;
 }
-.contactinputsright{
+.contactinputsright {
   /* sizing */
   width: 100%;
   /* content alignment */
@@ -440,7 +444,7 @@ body{
   justify-content: space-between;
   align-items: flex-start;
 }
-.messageframe{
+.messageframe {
   /* sizing */
   width: 100%;
   height: 75%;
@@ -450,18 +454,18 @@ body{
   align-items: flex-start;
   gap: 10px;
 }
-.messageframe p{
+.messageframe p {
   /* text */
   font-size: 18px;
   /* positioning */
   margin-left: 4%;
 }
-#message{
+#message {
   /* sizing */
   width: 90%;
   resize: none;
   /* style */
-  border: 2px solid #A2A2A2;
+  border: 2px solid #a2a2a2;
   border-radius: 2px;
   background-color: transparent;
   transition: none;
@@ -472,23 +476,23 @@ body{
   /* content alignment */
   padding: 3%;
 }
-#message::placeholder{
+#message::placeholder {
   /* text */
   font-size: 16px;
   font-weight: 200;
   color: var(--secondarytxt-clr);
 }
-#message:hover{
+#message:hover {
   /* style */
-  border: 2px solid #0066FF;
+  border: 2px solid #0066ff;
   transition: 1s;
 }
-#message:focus{
+#message:focus {
   /* style */
   outline: none;
-  border: 2px solid #0066FF;
+  border: 2px solid #0066ff;
 }
-.sendbutton{
+.sendbutton {
   /* sizing */
   width: 175px;
   height: 50px;
@@ -498,28 +502,28 @@ body{
   font-weight: 500;
   color: #fff;
   /* button style */
-  background-color: #0066FF;
+  background-color: #0066ff;
   border: none;
 }
-.fa-paper-plane{
+.fa-paper-plane {
   /* style */
   color: #ffffff;
 }
-.error-txt p{
+.error-txt p {
   /* text */
   font-size: 14px;
   text-align: left;
   color: #ff5353;
 }
-.error-txt{
+.error-txt {
   /* size */
   width: 100%;
   /* display */
   display: none;
 }
 
-@media only screen and (max-width: 600px){
-  .landing{
+@media only screen and (max-width: 600px) {
+  .landing {
     /* sizing */
     width: 85%;
     /* positioning */
@@ -527,7 +531,7 @@ body{
     /* content alignment */
     flex-direction: column;
   }
-  .landingtext{
+  .landingtext {
     /* sizing */
     width: 100%;
     height: fit-content;
@@ -537,18 +541,18 @@ body{
     /* positioning */
     margin: auto 0px auto 0px;
   }
-  .landingtext h1{
+  .landingtext h1 {
     /* text */
     font-size: 38px;
   }
-  .landingtext h3{
+  .landingtext h3 {
     /* text */
     font-size: 18px;
     font-weight: 500;
     /* positioning */
     margin-top: 10px;
   }
-  .button{
+  .button {
     /* sizing */
     width: 150px;
     height: 50px;
@@ -557,15 +561,15 @@ body{
     font-size: 18px;
     font-weight: 500;
   }
-  .landingbutton{
+  .landingbutton {
     /* positioning */
     margin-top: 20px;
   }
-  .landingtext a{
+  .landingtext a {
     /* sizing */
     border-radius: 10px;
   }
-  .illustrations{
+  .illustrations {
     /* sizing */
     width: 100%;
     min-width: 300px;
@@ -573,27 +577,27 @@ body{
     /* positioning */
     margin: 35px auto 0px auto;
   }
-  .illustrations img{
+  .illustrations img {
     /* sizing */
     width: 100%;
   }
-  
-  .services{
+
+  .services {
     /* sizing */
     width: 83%;
     /* positioning */
     margin: 64px auto 0px auto;
   }
-  .headingframe{
+  .headingframe {
     /* content alignment */
     margin-left: 0px;
   }
-  #bgheading{
+  #bgheading {
     /* sizing */
     height: 73px;
     margin-left: -10px;
   }
-  #heading{
+  #heading {
     /* size */
     width: fit-content;
     /* text */
@@ -602,47 +606,47 @@ body{
     /* positioning */
     margin: 30px 0px 0px 0px;
   }
-  .servicesandcalltoaction{
+  .servicesandcalltoaction {
     /* sizing */
     width: 100%;
     /* positioning */
     margin-top: 20px;
   }
-  .servicecards{
+  .servicecards {
     /* sizing */
     width: 100%;
     /* content alignment */
     flex-direction: column;
     gap: 18px;
   }
-  .card{
+  .card {
     /* sizing */
     width: 100%;
     height: 250px;
     border-radius: 20px;
   }
-  .cardcontent{
+  .cardcontent {
     /* sizing */
     width: 83%;
     height: 80%;
     /* content alignment */
     gap: 10px;
   }
-  .cardcontent img{
+  .cardcontent img {
     /* sizing */
     height: 48px;
   }
-  .cardcontent h2{
+  .cardcontent h2 {
     /* text */
     font-size: 20px;
   }
-  .cardcontent p{
+  .cardcontent p {
     /* sizing */
     width: 100%;
     /* text */
     font-size: 16px;
   }
-  #servicesubheading{
+  #servicesubheading {
     /* sizing */
     width: 95%;
     /* text */
@@ -650,32 +654,32 @@ body{
     /* positioning */
     margin: 50px auto 0px auto;
   }
-  #calltoactionbutton{
+  #calltoactionbutton {
     /* positioning */
     margin-top: 25px;
   }
-  #servicesubheading a{
+  #servicesubheading a {
     /* sizing */
     border-radius: 10px;
   }
 
-  .clients{
+  .clients {
     /* sizing */
     width: 100%;
     /* positioning */
     margin: 50px auto 0px auto;
   }
-  .clientsheadingframe{
+  .clientsheadingframe {
     /* size */
     width: 83%;
     /* positioning */
     margin: 0px auto 0px auto;
   }
-  .clientsheading{
+  .clientsheading {
     /* text */
     letter-spacing: -1px;
   }
-  .clientsliderouterframe{
+  .clientsliderouterframe {
     /* size */
     width: 100%;
     /* positioning */
@@ -683,7 +687,7 @@ body{
     /* content alignment */
     position: unset;
   }
-  .clientsliderframe{
+  .clientsliderframe {
     /* size */
     width: 100%;
     /* content alignment */
@@ -691,7 +695,7 @@ body{
     /* positioning */
     margin: 0px auto;
   }
-  .clientslider{
+  .clientslider {
     /* size */
     width: fit-content;
     /* positioning */
@@ -701,10 +705,10 @@ body{
     gap: 20px;
     padding: 0px 20px;
   }
-  .slidercontrols{
+  .slidercontrols {
     display: none;
   }
-  .slide{
+  .slide {
     /* sizing */
     min-width: unset;
     max-width: unset;
@@ -720,7 +724,7 @@ body{
     gap: 20px;
     padding: 50px 25px;
   }
-  .slidetxt{
+  .slidetxt {
     /* sizing */
     width: 100%;
     /* content alignment */
@@ -728,16 +732,16 @@ body{
     /* positioning */
     margin: 20px auto 0px auto;
   }
-  .slidetxt h1{
+  .slidetxt h1 {
     /* text */
     font-size: 22px;
     line-height: 130%;
   }
-  .slidetxt h3{
+  .slidetxt h3 {
     /* text */
     font-size: 15px;
   }
-  .slideimgbg{
+  .slideimgbg {
     /* sizing */
     height: 130px;
     width: 150px;
@@ -752,20 +756,20 @@ body{
     /* positioning */
     margin: 0px auto;
   }
-  .slideimgbg img{
+  .slideimgbg img {
     /* sizing */
     object-fit: contain;
     height: unset;
     width: 75%;
   }
 
-  .contact{
+  .contact {
     /* sizing */
     width: 83%;
     /* positioning */
     margin: 50px auto 100px auto;
   }
-  .contactinputs{
+  .contactinputs {
     /* sizing */
     width: 100%;
     /* content alignment */
@@ -776,7 +780,7 @@ body{
     /* positioning */
     margin: 25px auto 0px auto;
   }
-  .contactinputsleft{
+  .contactinputsleft {
     /* sizing */
     width: 100%;
     height: 300px;
@@ -787,14 +791,14 @@ body{
     justify-content: space-between;
     overflow: hidden;
   }
-  .contactinputs input{
+  .contactinputs input {
     /* sizing */
     width: 88%;
     /* style */
     border: none;
     border-radius: 0px;
     border-radius: none;
-    border-bottom: 2px solid #A2A2A2;
+    border-bottom: 2px solid #a2a2a2;
     background-color: transparent;
     transition: 1s;
     /* text */
@@ -804,28 +808,28 @@ body{
     /* content alignment */
     padding: 15px 4% 15px 4%;
   }
-  .contactinputs input::placeholder{
+  .contactinputs input::placeholder {
     /* text */
     font-size: 18px;
     font-weight: 200;
     color: var(--secondarytxt-clr);
   }
-  .contactinputs input:hover{
+  .contactinputs input:hover {
     /* sizing */
     width: 90%;
     transition: 0.2s;
     /* style */
-    border-bottom: 2px solid #0066FF;
+    border-bottom: 2px solid #0066ff;
   }
-  .contactinputs input:focus{
+  .contactinputs input:focus {
     /* sizing */
     width: 92%;
     transition: 0.5s;
     /* style */
-    border-bottom: 2px solid #0066FF;
+    border-bottom: 2px solid #0066ff;
     outline: none;
   }
-  .messageframe{
+  .messageframe {
     /* sizing */
     width: 100%;
     height: 200px;
@@ -835,13 +839,13 @@ body{
     align-items: flex-start;
     gap: 10px;
   }
-  .messageframe p{
+  .messageframe p {
     /* text */
     font-size: 16px;
     /* positioning */
     margin-left: 4%;
   }
-  #message{
+  #message {
     /* sizing */
     width: 92%;
     /* text */
@@ -850,13 +854,13 @@ body{
     /* content alignment */
     padding: 3%;
   }
-  #message::placeholder{
+  #message::placeholder {
     /* text */
     font-size: 16px;
     font-weight: 200;
     color: var(--secondarytxt-clr);
   }
-  .sendbutton{
+  .sendbutton {
     /* sizing */
     width: 155px;
     height: 50px;
@@ -867,7 +871,7 @@ body{
     /* positioning */
     margin-top: 20px;
   }
-  .error-txt p{
+  .error-txt p {
     /* text */
     font-size: 12px;
     text-align: left;
