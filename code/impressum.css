@@ -31,3 +31,208 @@
   --secondarytxt-clr: #888;
   --cardsbg-clr: #1C1C1C;
 }
+
+body{
+  background-color: var(--background-clr);
+}
+
+.bigheader{
+  font-size: 85px;
+  margin-top: 40px;
+  color: var(--primarytxt-clr);
+}
+.profilepics{
+  /* sizing */
+  width: 80%;
+  /* positioning */
+  margin: 50px auto 0px auto;
+  /* content alignment */
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--secondarytxt-clr);
+}
+.profilepicsframe{
+  /* sizing */
+  width: 30%;
+  min-width: 320px;
+  /* content alignment */
+  display: flex;
+  justify-content: space-between;
+  /* positioning */
+  margin: 0px auto 0px 2%;
+}
+.picframe{
+  /* size */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+
+  border: 1px solid red;
+}
+.versionupdate{
+  /* size */
+  width: fit-content;
+  margin: auto;
+}
+.versionupdate p{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--secondarytxt-clr);
+}
+.imprintgrid{
+  /* size */
+  width: 80%;
+  /* positioning */
+  margin: 50px auto 0px auto;
+}
+.imrpintframe{
+  /* size */
+  width: 60%;
+  min-width: 600px;
+  /* content alignment */
+  display: flex;
+  justify-content: space-between;
+}
+.adresssection, .contactsection, .legalsection{
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+.imrpintframe h1, .imrpintframe p{
+  width: 100%;
+  text-align: left;
+  color: var(--primarytxt-clr);
+}
+.imprintgrid h1{
+  font-size: 25px;
+}
+.imrpintframe p{
+  line-height: 150%;
+  font-size: 18px;
+}
+
+.legalinformation{
+  /* size */
+  width: 80%;
+  /* content alignment */
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  /* positioning */
+  margin: 100px auto 200px auto;
+}
+.legalinformation h1, .legalinformation p{
+  text-align: left;
+  color: var(--secondarytxt-clr);
+}
+.legalinformation h1{
+  font-size: 20px;
+}
+.legalinformation p{
+  font-size: 16px;
+  line-height: 180%;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 600px){
+  .bigheader{
+    font-size: 30px;
+    margin-top: 30px;
+  }
+  .profilepics{
+    /* sizing */
+    width: 83%;
+    /* positioning */
+    margin: 10px auto 0px auto;
+    /* content alignment */
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+    padding-bottom: 0px;
+    border-bottom: none;
+  }
+  .profilepicsframe{
+    /* sizing */
+    width: fit-content;
+    min-width: 200px;
+    /* content alignment */
+    display: flex;
+    justify-content: unset;
+    gap: 10px;
+    /* positioning */
+    margin: 0px auto 0px 0px;
+  }
+  .picframe{
+    /* size */
+    width: 110px;
+    height: 110px;
+
+    border: 1px solid red;
+  }
+  .versionupdate p{
+    font-size: 12px;
+  }
+  .imprintgrid{
+    /* size */
+    width: 83%;
+    /* positioning */
+    margin: 30px auto 0px auto;
+  }
+  .imrpintframe{
+    /* size */
+    width: 100%;
+    min-width: unset;
+    /* content alignment */
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 100px 100px;
+    row-gap: 50px;
+    column-gap: 10px;
+  }
+  .adresssection, .contactsection, .legalsection{
+    gap: 5px;
+  }
+  .adresssection{
+    grid-row: 1 / span 1;
+  }
+  .contactsection{
+    grid-row: 1 / span 2;
+  }
+  .legalsection{
+    grid-row: 2 / span 1;
+  }
+  .imprintgrid h1{
+    font-size: 18px;
+  }
+  .imrpintframe p{
+    line-height: 150%;
+    font-size: 14px;
+  }
+  
+  .legalinformation{
+    /* size */
+    width: 80%;
+    /* content alignment */
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    /* positioning */
+    margin: 40px auto 150px auto;
+  }
+  .legalinformation h1, .legalinformation p{
+    text-align: left;
+    color: var(--secondarytxt-clr);
+  }
+  .legalinformation h1{
+    font-size: 18px;
+  }
+  .legalinformation p{
+    font-size: 12px;
+    line-height: 180%;
+  }
+}

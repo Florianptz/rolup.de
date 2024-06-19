@@ -1,11 +1,3 @@
-// HEADER BUTTON KONTAKT SCROLL FUNCTION
-
-function scrollFunction() {
-  const element = document.getElementById("contactsection");
-  element.scrollIntoView({ behavior: 'smooth'});
-}
-// HEADER BUTTON KONTAKT SCROLL FUNCTION
-
 //DARKMODE
 
 var sunmoonicon = document.getElementById("darklightmodeiconsvg");
@@ -144,40 +136,40 @@ if (window.innerWidth > 600){
 
 // CONTACT FORM
 
-// document.getElementById('contactform').addEventListener('submit', function(event) {
-//   let email = document.getElementById('emailinput').value;
-//   let message = document.getElementById('message').value;
-//   let phone = document.getElementById('phonenumber').value;
-//   let errorDiv = document.getElementById('error-txt');
+document.getElementById('contactform').addEventListener('submit', function(event) {
+  let email = document.getElementById('emailinput').value;
+  let message = document.getElementById('message').value;
+  let phone = document.getElementById('phonenumber').value;
+  let errorDiv = document.getElementById('error-txt');
 
-//   let errorMessage = '';
+  let errorMessage = '';
   
-//   if (!email || !validateEmail(email)) {
-//       errorMessage += 'Email erforderlich.<br>';
-//   }
+  if (!email || !validateEmail(email)) {
+      errorMessage += 'Email erforderlich.<br>';
+  }
 
-//   if (phone && !validatePhone(phone)) {
-//     errorMessage += 'ungültige Rufnummer.<br>';
-//   }
+  if (phone && !validatePhone(phone)) {
+    errorMessage += 'ungültige Rufnummer.<br>';
+  }
   
-//   if (!message) {
-//       errorMessage += 'Bitte geben Sie eine Nachricht ein.<br>';
-//   }
+  if (!message) {
+      errorMessage += 'Bitte geben Sie eine Nachricht ein.<br>';
+  }
 
-//   if (errorMessage) {
-//       event.preventDefault();
-//       errorDiv.innerHTML = errorMessage;
-//   }
-// });
+  if (errorMessage) {
+      event.preventDefault();
+      errorDiv.innerHTML = errorMessage;
+  }
+});
 
-// function validateEmail(email) {
-//   const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-//   return re.test(String(email).toLowerCase());
-// }
+function validateEmail(email) {
+  const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+  return re.test(String(email).toLowerCase());
+}
 
-// function validatePhone(phone) {
-//   const re = /^\+?(\d.*){10,}$/;
-//   return re.test(String(phone));
-// }
+function validatePhone(phone) {
+  const re = /^\+?(\d.*){10,}$/;
+  return re.test(String(phone));
+}
 
 // CONTACT FORM

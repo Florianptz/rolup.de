@@ -74,7 +74,17 @@ header{
   font-size: 16px;
 }
 .headerbutton{
-  display: none;
+  /* sizing */
+  width: 160px;
+  height: 40px;
+  border-radius: 8px;
+  /* text */
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  /* button style */
+  background-color: #0066FF;
+  border: none;
 }
 .headerbutton:hover{
   /* cursor */
@@ -115,7 +125,7 @@ footer{
   display: flex;
   justify-content: space-between;
 }
-footer p,h2{
+footer p, h2{
   /* text */
   color: #fff;
 }
@@ -254,12 +264,7 @@ footer p{
     font-size: 12px;
   }
   .headerbutton{
-    /* sizing */
-    width: 100px;
-    height: 25px;
-    border-radius: 8px;
-    /* text */
-    font-size: 14px;
+    display: none;
   }
   .headerbutton:hover{
     /* cursor */

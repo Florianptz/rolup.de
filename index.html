@@ -5,24 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../assets/favicon.png">
-    <link rel="stylesheet" href="../code/style.css">
+    <link rel="stylesheet" href="./code/style.css">
     <title>rolup</title>
     <script src="https://kit.fontawesome.com/28a968a5bb.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
     <header>
-      <link rel="stylesheet" href="../code/main.css">
+      <link rel="stylesheet" href="./code/main.css">
       <div class="headerframe">
-        <a href="../index.html"><img src="../assets/RolupLogoblack.svg" alt="" id="headerlogo"></a>
+        <a href="./index.html"><img src="./assets/RolupLogoblack.svg" alt="" id="headerlogo"></a>
         <div class="headerlinksandicon">
           <div class="headerlinks">
-            <button onclick="scrollFunction()" href="" id="headerbutton" class="headerbutton">Kontaktieren</button>
-            <a href="../code/projects.html">Projekte</a>
-            <a href="../index.html#servicesection">Services</a>
-            <a href="../code/about.html">Über uns</a>
+            <a href="./index.html#contactsection"><button id="headerbutton" class="headerbutton">Kontaktformular</button></a>
+            <a href="./code/projects.html">Projekte</a>
+            <a href="./index.html#servicesection">Services</a>
+            <a href="./code/about.html">Über uns</a>
           </div>
-          <img type="icon" src="../assets/sun.svg" alt="" id="darklightmodeiconsvg" class="darklightmodeiconsvg">
+          <img type="icon" src="./assets/sun.svg" alt="" id="darklightmodeiconsvg" class="darklightmodeiconsvg">
         </div>
       </div>
     </header>
@@ -31,16 +31,16 @@
       <div class="landingtext">
         <h1>Du hast das Produkt, wir machen darauf aufmerksam</h1>
         <h3>Wir schaffen, dass dein Produkt gesehen wird und in Erinnerung bleibt</h3>
-        <button class="button landingbutton">Jetzt buchen</button>
+        <a href="./code/booking.html"><button class="button landingbutton">Jetzt buchen</button></a>
       </div>
       <div class="illustrations">
-        <img src="../assets/Illustrationslight.svg" alt="" id="illustrations">
+        <img src="./assets/Illustrationslight.svg" alt="" id="illustrations">
       </div>
     </div>
 
     <div id="servicesection" class="services">
       <div class="headingframe">
-        <img src="../assets/servicesheading.svg" alt="" id="bgheading">
+        <img src="./assets/servicesheading.svg" alt="" id="bgheading">
         <h1 id="heading">Was wir für dich machen</h1>
       </div>
       <!-- to align the cards, subheading and button in center -->
@@ -48,34 +48,34 @@
         <div class="servicecards">
           <div class="card videocard">
             <div class="cardcontent">
-              <img src="../assets/WerbevideosIcon.svg" alt="">
+              <img src="./assets/WerbevideosIcon.svg" alt="">
               <h2>Werbevideos</h2>
               <p>Ob Gastronomie, Einzelhandel, Online-Business, wir filmen Ihnen und Ihrem Produkt ein Werbevideo, was Ihr Geschäft in Erinnerung bleiben lässt!</p>
             </div>
           </div>
           <div class="card fotocard">
             <div class="cardcontent">
-              <img src="../assets/FotografieIcon.svg" alt="">
+              <img src="./assets/FotografieIcon.svg" alt="">
               <h2>Produktfotografie</h2>
               <p>Wir produzieren für Sie eine Reihe von qualitativ hochwertigen und treffenden Produkt-Bildern für Ihre Social media Präsenz, Werbeposter,  Homepage etc.</p>
             </div>
           </div>
           <div class="card grafikcard">
             <div class="cardcontent">
-              <img src="../assets/DesignIcon.svg" alt="">
+              <img src="./assets/DesignIcon.svg" alt="">
               <h2>Grafik-Design</h2>
               <p>Brauchen Sie ein perfektes Logo, ein Cover, ein Poster oder andere digitale Grafiken für Ihr Produkt oder Business? Wir verwirklichen Ihre Ideen!</p>
             </div>
           </div>
         </div>
         <h2 id="servicesubheading">Schreib uns einfach eine kurze Nachricht in der du uns erzählst, was wir für dich verwirklichen dürfen.</h2>
-        <button class="button" id="calltoactionbutton">Jetzt buchen</button>
+        <a href="./code/booking.html"><button class="button" id="calltoactionbutton">Jetzt buchen</button></a>
       </div>
     </div>
 
     <div class="clients">
       <div class="headingframe clientsheadingframe">
-        <img src="../assets/kundenheading.svg" alt="" id="bgheading">
+        <img src="./assets/kundenheading.svg" alt="" id="bgheading">
         <h1 id="heading" class="clientsheading">Das sagen unsere Kunden</h1>
       </div>
       <div class="clientsliderouterframe">
@@ -87,7 +87,7 @@
                 <h3>Dagmar Gerigk - Leadership Coach, Autor und Speaker</h3>
               </div>
               <div class="slideimgbg blueslideimgbg">
-                <img src="../assets/DagmarGerigkclientcardimg.png" alt="">
+                <img src="./assets/DagmarGerigkclientcardimg.png" alt="">
               </div>
             </div>
             <div class="slide yellowslide">
@@ -119,10 +119,10 @@
 
     <div id="contactsection" class="contact">
       <div class="headingframe">
-        <img src="../assets/kontaktheading.svg" alt="" id="bgheading">
+        <img src="./assets/kontaktheading.svg" alt="" id="bgheading">
         <h1 id="heading">Kontakt aufnehmen</h1>
       </div>
-      <form action="https://formspree.io/f/xvoeeyov" method="POST" class="contactinputs" id="contactform">
+      <form action="process.php" method="POST" class="contactinputs" id="contactform">
         <div class="contactinputsleft">
           <input contenteditable="plaintext-only" type="email" name="emailinput" placeholder="*Email" required id="emailinput" class="inputs emailinput">
           <input contenteditable="plaintext-only" type="text" name="lastname" placeholder="*Name" id="lastname" class="inputs lastname">
@@ -134,6 +134,7 @@
             <p>Deine Nachricht...</p>
             <textarea name="message" type="" cols="1" rows="10" maxlength="1500" id="message" placeholder="*schreibe deine Nachricht hier..."></textarea>
           </div>
+          <p id="Datenschutzhinweis">Durch das Abschicken stimmen Sie der <a href="./code/privacypolicy.html" style="text-decoration: underline;">Datenschutzerklärung</a> zu.</p>
           <button type="submit" class="button sendbutton">senden <i class="fa-regular fa-paper-plane"></i></button>
         </div>
         <div id="error-txt" class="error-txt"></div>
@@ -141,10 +142,10 @@
     </div>
 
     <footer>
-      <link rel="stylesheet" href="../code/main.css">
+      <link rel="stylesheet" href="./code/main.css">
       <div class="footersection1">
         <div class="footerlogomailtel">
-          <a href="../index.html"><img src="../assets/RolupLogowhite.svg" alt="" id="footerlogo"></a>
+          <a href="./index.html"><img src="./assets/RolupLogowhite.svg" alt="" id="footerlogo"></a>
           <div class="telandmail"><p>Tel:</p><p id="footertel">+49 123 4567890</p></div>
           <div class="telandmail"><p>Mail:</p><p id="footeremail">kontakt@rolup.de</p></div>
         </div>
@@ -156,29 +157,29 @@
         </div>
         <div class="footernavigation">
           <h2>Navigation</h2>
-          <a href="../index.html" id="footerlinkhome">Home</a>
-          <a href="../code/about.html" id="footerlinkabout">Über uns</a>
-          <a href="../code/projects.html" id="footerlinkprojects">Projects</a>
+          <a href="./index.html" id="footerlinkhome">Home</a>
+          <a href="./code/about.html" id="footerlinkabout">Über uns</a>
+          <a href="./code/projects.html" id="footerlinkprojects">Projects</a>
         </div>
         <div class="footerlegal">
           <h2>Rechtliches</h2>
-          <a href="" id="footerlinkAGB">AGB</a>
-          <a href="" id="footerlinkprivacypolicy">Datenschutzerklärung</a>
-          <a href="" id="footerlinkprojectsimpressum">Impressum</a>
+          <a href="./code/AGB.html" id="footerlinkAGB">AGB</a>
+          <a href="./code/privacypolicy.html" id="footerlinkprivacypolicy">Datenschutzerklärung</a>
+          <a href="./code/impressum.html" id="footerlinkprojectsimpressum">Impressum</a>
         </div>
       </div>
       <div class="footersection2">
         <hr class="devideline">
         <div>
           <p>@rolup.de</p>
-          <a href="" id="footerAGBlink">AGB</a>
-          <a href="" id="footerpolicylink">privacy policy</a>
-          <a href="../code/impressum.html" id="footerimpressumlink">Impressum</a>
+          <a href="./code/AGB.html" id="footerAGBlink">AGB</a>
+          <a href="./code/privacypolicy.html" id="footerpolicylink">Datenschutz</a>
+          <a href="./code/impressum.html" id="footerimpressumlink">Impressum</a>
         </div>
       </div>
     </footer>
     
-    <script src="../code/index.js"></script>
+    <script src="./code/index.js"></script>
   </body>
 </html>
 

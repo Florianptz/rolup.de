@@ -488,6 +488,16 @@ body{
   outline: none;
   border: 2px solid #0066FF;
 }
+#Datenschutzhinweis{
+  font-size: 14px;
+  text-align: left;
+  color: var(--secondarytxt-clr);
+  opacity: 50%;
+  margin-top: 0px;
+}
+#Datenschutzhinweis a{
+  color: var(--secondarytxt-clr);
+}
 .sendbutton{
   /* sizing */
   width: 175px;
@@ -855,6 +865,10 @@ body{
     font-size: 16px;
     font-weight: 200;
     color: var(--secondarytxt-clr);
+  }
+  #Datenschutzhinweis{
+    font-size: 9px;
+    margin-top: 5px;
   }
   .sendbutton{
     /* sizing */
