@@ -35,3 +35,69 @@
 body{
   background-color: var(--background-clr);
 }
+
+.bigheading{
+  font-size: 50px;
+  margin-top: 30px;
+}
+.contactmethods{
+  width: 83%;
+  margin: 50px auto 0px auto;
+  height: fit-content;
+  display: flex;
+  justify-content: space-evenly;
+}
+.section{
+  width: 300px;
+  height: 100px;
+  padding: 60px 30px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+  background-color: var(--cardsbg-clr);
+}
+.sectionheading{
+  font-size: 25px;
+  color: var(--primarytxt-clr);
+}
+.mailadress, .phonenumber{
+  width: fit-content;
+  height: fit-content;
+  padding: 8px 20px;
+  border-radius: 5px;
+  box-shadow: var(--boxshadow-header);
+  background-color: var(--background-clr);
+}
+.mailadress p, .phonenumber p{
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primarytxt-clr);
+}
+.contactformlink{
+  align-items: unset;
+}
+.contactformlink a{
+  margin: auto;
+}
+.contactformlink button{
+  /* sizing */
+  width: 175px;
+  height: 50px;
+  border-radius: 10px;
+  /* text */
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  /* button style */
+  background-color: #0066FF;
+  border: none;
+}
+.contactformlink button:hover{
+  /* cursor */
+  cursor: pointer;
+  /* transformation */
+  transform: scale(1.02);
+  transition: 0.2s;
+}
