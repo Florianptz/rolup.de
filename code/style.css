@@ -435,6 +435,28 @@ h3 {
   border-bottom: 2px solid #0066ff;
   outline: none;
 }
+.contactinputs .wrongmail {
+  background-color: #ff7474;
+}
+
+.contactinputs .wrongmail::before {
+  content: "";
+  height: 20px;
+  width: 200px;
+  background-color: green;
+}
+
+.contactinputs .errormessage {
+  color: red;
+  position: absolute;
+  transform: translate(50px, -20px);
+  visibility: hidden;
+}
+
+.contactinputs .errormessage-visible {
+  visibility: visible;
+}
+
 .contactinputsright {
   /* sizing */
   width: 100%;
@@ -492,17 +514,17 @@ h3 {
   outline: none;
   border: 2px solid #0066ff;
 }
-#Datenschutzhinweis{
+#Datenschutzhinweis {
   font-size: 14px;
   text-align: left;
   color: var(--secondarytxt-clr);
   opacity: 50%;
   margin-top: 0px;
 }
-#Datenschutzhinweis a{
+#Datenschutzhinweis a {
   color: var(--secondarytxt-clr);
 }
-.sendbutton{
+.sendbutton {
   /* sizing */
   width: 175px;
   height: 50px;
@@ -512,7 +534,7 @@ h3 {
   font-weight: 500;
   color: #fff;
   /* button style */
-  background-color: #0066FF;
+  background-color: #0066ff;
   border: none;
 }
 .fa-paper-plane {
@@ -870,11 +892,11 @@ h3 {
     font-weight: 200;
     color: var(--secondarytxt-clr);
   }
-  #Datenschutzhinweis{
+  #Datenschutzhinweis {
     font-size: 9px;
     margin-top: 5px;
   }
-  .sendbutton{
+  .sendbutton {
     /* sizing */
     width: 155px;
     height: 50px;

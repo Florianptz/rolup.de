@@ -9,9 +9,8 @@
     <title>rolup</title>
     <script src="https://kit.fontawesome.com/28a968a5bb.js" crossorigin="anonymous"></script>
     <!--Contact Form Scripts-->
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="./code/index.js"></script>
     <script type="text/javascript">
       (function(){
           emailjs.init({
@@ -19,7 +18,31 @@
           });
       })();
     </script>
-    <script src="./code/index.js"></script>
+    <script type="text/javascript">
+      function validateEmail(email) {
+      const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+      return re.test(String(email).toLowerCase());
+      }
+      window.onload = function() {
+          document.getElementById('contactform').addEventListener('submit', function(event) {
+              event.preventDefault();
+              // these IDs from the previous steps
+              if(validateEmail(document.getElementById("emailinput").value)){
+                emailjs.sendForm('service_wfpj3e9', 'template_jiutois', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+                    document.getElementById("errormail").classList.remove("errormessage-visible");
+                    document.getElementById("emailinput").classList.remove("wrongmail");
+              } else{
+                document.getElementById("errormail").classList.add("errormessage-visible");
+                document.getElementById("emailinput").classList.add("wrongmail");
+              }
+          });
+      }
+  </script>
   </head>
 
   <body>
@@ -139,9 +162,10 @@
         <h1 id="heading">Kontakt aufnehmen</h1>
       </div>
 
-      <form method="POST" class="contactinputs" id="contactform">
+      <form class="contactinputs" id="contactform">
         <div class="contactinputsleft">
-          <input contenteditable="plaintext-only" type="email" name="email" placeholder="*Email" required id="emailinput" class="inputs emailinput">
+          <p class="errormessage" id="errormail">Bitte gib eine valide Emailadresse an!</p>
+          <input contenteditable="plaintext-only" type="text" name="email" placeholder="*Email" id="emailinput" class="inputs emailinput">
           <input contenteditable="plaintext-only" type="text" name="lastname" placeholder="*Name" id="lastname" class="inputs lastname">
           <input contenteditable="plaintext-only" type="text" name="firstname" placeholder="*Vorname" id="firstname" class="inputs firstname">
           <input type="tel" name="phonenumber" placeholder="+491234567890" id="phonenumber" class="inputs phonenumber">
@@ -151,9 +175,8 @@
             <p>Deine Nachricht...</p>
             <textarea name="message" type="" cols="1" rows="10" maxlength="1500" id="message" placeholder="*schreibe deine Nachricht hier..."></textarea>
           </div>
-          <button onclick="sendMail()" type="submit" class="button sendbutton">senden <i class="fa-regular fa-paper-plane"></i></button>
-          <p id="Datenschutzhinweis">Durch das Abschicken stimmen Sie der <a href="./code/privacypolicy.html" style="text-decoration: underline;">Datenschutzerklärung</a> zu.</p>
           <button type="submit" class="button sendbutton">senden <i class="fa-regular fa-paper-plane"></i></button>
+          <p id="Datenschutzhinweis">Durch das Abschicken stimmen Sie der <a href="./code/privacypolicy.html" style="text-decoration: underline;">Datenschutzerklärung</a> zu.</p>
         </div>
         <div id="error-txt" class="error-txt"></div>
       </form>
