@@ -1,0 +1,133 @@
+*{
+  /* text */
+  color: var(--primarytxt-clr);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  /* content alignment */
+  padding: 0px;
+  margin: 0px;
+}
+:root {
+  /* primary background */
+  --background-clr: #fff;
+  /* secondary background */
+  --secondarybg-clr: #000;
+  /* header box shadow */
+  --boxshadow-header: 0px 4px 60px 0px #dbdbdb;
+  /* text (headings and titles) */
+  --primarytxt-clr: #000;
+  /* subtitles (small text) */
+  --secondarytxt-clr: #8A8A8A;
+  /* service cards background */
+  --cardsbg-clr: #EFEFEF;
+}
+
+.darkmode {
+  --background-clr: #000;
+  --secondarybg-clr: #fff;
+  --boxshadow-header: none;
+  --primarytxt-clr: #fff;
+  --secondarytxt-clr: #888;
+  --cardsbg-clr: #1C1C1C;
+}
+
+body{
+  background-color: var(--background-clr);
+}
+
+.bigheading{
+  font-size: 50px;
+  margin-top: 30px;
+}
+.contactmethods{
+  width: 83%;
+  margin: 50px auto 0px auto;
+  height: fit-content;
+  display: flex;
+  justify-content: space-evenly;
+}
+.section{
+  width: 300px;
+  height: 100px;
+  padding: 60px 30px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+  background-color: var(--cardsbg-clr);
+}
+.sectionheading{
+  font-size: 25px;
+  color: var(--primarytxt-clr);
+}
+.mailadress, .phonenumber{
+  width: fit-content;
+  height: fit-content;
+  padding: 8px 20px;
+  border-radius: 5px;
+  box-shadow: var(--boxshadow-header);
+  background-color: var(--background-clr);
+}
+.mailadress p, .phonenumber p{
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primarytxt-clr);
+}
+.contactformlink{
+  align-items: unset;
+}
+.contactformlink a{
+  margin: auto;
+}
+.contactformlink button{
+  /* sizing */
+  width: 175px;
+  height: 50px;
+  border-radius: 10px;
+  /* text */
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  /* button style */
+  background-color: #0066FF;
+  border: none;
+}
+.contactformlink button:hover{
+  /* cursor */
+  cursor: pointer;
+  /* transformation */
+  transform: scale(1.02);
+  transition: 0.2s;
+}
+
+@media only screen and (max-width: 600px){
+  .bigheading{
+    font-size: 30px;
+    margin-top: 30px;
+  }
+  .contactmethods{
+    width: 83%;
+    margin: 25px auto 50px auto;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: unset;
+  }
+  .section{
+    width: calc(100% - 70px);
+    height: 80px;
+    padding: 30px 35px;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .sectionheading{
+    width: 100%;
+    font-size: 18px;
+    color: var(--primarytxt-clr);
+  }
+}

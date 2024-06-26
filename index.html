@@ -29,7 +29,11 @@
         <a href="./index.html"><img src="./assets/RolupLogoblack.svg" alt="" id="headerlogo"></a>
         <div class="headerlinksandicon">
           <div class="headerlinks">
+
             <button onclick="scrollFunction()" href="" id="headerbutton" class="headerbutton">Kontaktieren</button>
+
+            <a href="./index.html#contactsection"><button id="headerbutton" class="headerbutton">Kontaktformular</button></a>
+
             <a href="./code/projects.html">Projekte</a>
             <a href="./index.html#servicesection">Services</a>
             <a href="./code/about.html">Über uns</a>
@@ -43,7 +47,7 @@
       <div class="landingtext">
         <h1>Du hast das Produkt, wir machen darauf aufmerksam</h1>
         <h3>Wir schaffen, dass dein Produkt gesehen wird und in Erinnerung bleibt</h3>
-        <button class="button landingbutton">Jetzt buchen</button>
+        <a href="./code/booking.html"><button class="button landingbutton">Jetzt buchen</button></a>
       </div>
       <div class="illustrations">
         <img src="./assets/Illustrationslight.svg" alt="" id="illustrations">
@@ -81,7 +85,7 @@
           </div>
         </div>
         <h2 id="servicesubheading">Schreib uns einfach eine kurze Nachricht in der du uns erzählst, was wir für dich verwirklichen dürfen.</h2>
-        <button class="button" id="calltoactionbutton">Jetzt buchen</button>
+        <a href="./code/booking.html"><button class="button" id="calltoactionbutton">Jetzt buchen</button></a>
       </div>
     </div>
 
@@ -134,6 +138,7 @@
         <img src="./assets/kontaktheading.svg" alt="" id="bgheading">
         <h1 id="heading">Kontakt aufnehmen</h1>
       </div>
+
       <form method="POST" class="contactinputs" id="contactform">
         <div class="contactinputsleft">
           <input contenteditable="plaintext-only" type="email" name="email" placeholder="*Email" required id="emailinput" class="inputs emailinput">
@@ -147,6 +152,8 @@
             <textarea name="message" type="" cols="1" rows="10" maxlength="1500" id="message" placeholder="*schreibe deine Nachricht hier..."></textarea>
           </div>
           <button onclick="sendMail()" type="submit" class="button sendbutton">senden <i class="fa-regular fa-paper-plane"></i></button>
+          <p id="Datenschutzhinweis">Durch das Abschicken stimmen Sie der <a href="./code/privacypolicy.html" style="text-decoration: underline;">Datenschutzerklärung</a> zu.</p>
+          <button type="submit" class="button sendbutton">senden <i class="fa-regular fa-paper-plane"></i></button>
         </div>
         <div id="error-txt" class="error-txt"></div>
       </form>
@@ -174,9 +181,9 @@
         </div>
         <div class="footerlegal">
           <h2>Rechtliches</h2>
-          <a href="" id="footerlinkAGB">AGB</a>
-          <a href="" id="footerlinkprivacypolicy">Datenschutzerklärung</a>
-          <a href="" id="footerlinkprojectsimpressum">Impressum</a>
+          <a href="./code/AGB.html" id="footerlinkAGB">AGB</a>
+          <a href="./code/privacypolicy.html" id="footerlinkprivacypolicy">Datenschutzerklärung</a>
+          <a href="./code/impressum.html" id="footerlinkprojectsimpressum">Impressum</a>
         </div>
       </div>
       <div class="footersection2">
@@ -185,10 +192,15 @@
           <p>@rolup.de</p>
           <a href="" id="footerAGBlink">AGB</a>
           <a href="" id="footerpolicylink">privacy policy</a>
+          <p>©rolup.de | all rights reserved |</p>
+          <a href="./code/AGB.html" id="footerAGBlink">AGB</a>
+          <a href="./code/privacypolicy.html" id="footerpolicylink">Datenschutz</a>
           <a href="./code/impressum.html" id="footerimpressumlink">Impressum</a>
         </div>
       </div>
     </footer>
+    
+    <script src="./code/index.js"></script>
   </body>
 </html>
 

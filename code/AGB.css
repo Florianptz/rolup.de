@@ -1,0 +1,111 @@
+*{
+  /* text */
+  color: var(--primarytxt-clr);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  /* content alignment */
+  padding: 0px;
+  margin: 0px;
+}
+:root {
+  /* primary background */
+  --background-clr: #fff;
+  /* secondary background */
+  --secondarybg-clr: #000;
+  /* header box shadow */
+  --boxshadow-header: 0px 4px 60px 0px #dbdbdb;
+  /* text (headings and titles) */
+  --primarytxt-clr: #000;
+  /* subtitles (small text) */
+  --secondarytxt-clr: #8A8A8A;
+  /* service cards background */
+  --cardsbg-clr: #EFEFEF;
+}
+
+.darkmode {
+  --background-clr: #000;
+  --secondarybg-clr: #fff;
+  --boxshadow-header: none;
+  --primarytxt-clr: #fff;
+  --secondarytxt-clr: #888;
+  --cardsbg-clr: #1C1C1C;
+}
+
+body{
+  background-color: var(--background-clr);
+}
+
+.bigheader{
+  font-size: 60px;
+  margin: 50px auto 0px auto;
+}
+
+.CONTENT{
+  /* size */
+  width: 80%;
+  /* content alignment */
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  /* positioning */
+  margin: 80px auto 100px auto;
+}
+
+.CONTENT h2{
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+  color: #0066FF;
+}
+
+
+.CONTENT p{
+  width: 100%;
+  font-size: 18px;
+  text-align: left;
+  line-height: 150%;
+  color: var(--secondarytxt-clr);
+}
+
+.p1, .p2, .p3, .p4, .p5, .p6, .p7, .p8, .p9, .p10{
+  /* size */
+  width: 100%;
+  /* content alignment */
+  display: flex;
+  flex-direction: column;
+}
+
+.p1 p, .p2 p, .p3 p, .p4 p, .p5 p, .p6 p, .p7 p, .p8 p, .p9 p, .p10 p{
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 600px){
+  .bigheader{
+    font-size: 25px;
+    margin: 30px auto 0px auto;
+  }
+
+  .CONTENT{
+    /* size */
+    width: 83%;
+    /* content alignment */
+    gap: 50px;
+    /* positioning */
+    margin: 50px auto 80px auto;
+  }
+
+  .CONTENT h2{
+    margin-bottom: 5px;
+    font-size: 22px;
+  }
+
+  
+  .CONTENT p{
+    font-size: 14px;
+  }
+
+  .p1 p, .p2 p, .p3 p, .p4 p, .p5 p, .p6 p, .p7 p, .p8 p, .p9 p, .p10 p{
+    margin-top: 3px;
+  }
+}
