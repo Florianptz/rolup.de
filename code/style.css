@@ -323,8 +323,7 @@ body {
   /* positioning */
   margin: auto 0px auto 0px;
 }
-.slidetxt h1,
-h3 {
+.slidetxt h1, h3 {
   /* text */
   text-align: left;
   color: #fff;
