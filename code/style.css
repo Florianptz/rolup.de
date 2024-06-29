@@ -435,26 +435,31 @@ h3 {
   border-bottom: 2px solid #0066ff;
   outline: none;
 }
-.contactinputs .wrongmail {
+.contactinputs .wronginput {
   background-color: #ff7474;
-}
-
-.contactinputs .wrongmail::before {
-  content: "";
-  height: 20px;
-  width: 200px;
-  background-color: green;
 }
 
 .contactinputs .errormessage {
   color: red;
-  position: absolute;
-  transform: translate(50px, -20px);
   visibility: hidden;
 }
 
 .contactinputs .errormessage-visible {
   visibility: visible;
+}
+
+.contactinputsright .wronginput {
+  background-color: #ff7474 !important;
+}
+
+.contactinputsright .errormessage {
+  color: red !important;
+  visibility: hidden !important;
+}
+
+.contactinputsright .errormessage-visible {
+  visibility: visible !important;
+  text-align: left;
 }
 
 .contactinputsright {
