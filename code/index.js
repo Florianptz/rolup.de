@@ -1,3 +1,4 @@
+
 //DARKMODE
 
 var sunmoonicon = document.getElementById("darklightmodeiconsvg");
@@ -8,27 +9,27 @@ var aboutlogo = document.getElementById("aboutpagelogo");
 // var contactheadline = document.getElementById("");
 
 // check for saved 'darkMode' in localStorage
-let darkMode = localStorage.getItem("darkMode");
+let darkMode = localStorage.getItem('darkMode'); 
 
-const darkModeToggle = document.querySelector("#darklightmodeiconsvg");
+const darkModeToggle = document.querySelector('#darklightmodeiconsvg');
 
 const enableDarkMode = () => {
   // 1. Add the class to the body
-  document.body.classList.add("darkmode");
+  document.body.classList.add('darkmode');
   // 2. Update darkMode in localStorage
-  localStorage.setItem("darkMode", "enabled");
-};
+  localStorage.setItem('darkMode', 'enabled');
+}
 
 const disableDarkMode = () => {
   // 1. Remove the class from the body
-  document.body.classList.remove("darkmode");
-  // 2. Update darkMode in localStorage
-  localStorage.setItem("darkMode", null);
-};
-
+  document.body.classList.remove('darkmode');
+  // 2. Update darkMode in localStorage 
+  localStorage.setItem('darkMode', null);
+}
+ 
 // If the user already visited and enabled darkMode
 // start things off with it on
-if (darkMode === "enabled") {
+if (darkMode === 'enabled') {
   enableDarkMode();
   sunmoonicon.src = "../assets/moon.svg";
   headerlogo.src = "../assets/RolupLogowhite.svg";
@@ -36,19 +37,19 @@ if (darkMode === "enabled") {
 }
 
 // When someone clicks the button
-darkModeToggle.addEventListener("click", () => {
+darkModeToggle.addEventListener('click', () => {
   // get their darkMode setting
-  darkMode = localStorage.getItem("darkMode");
-
+  darkMode = localStorage.getItem('darkMode'); 
+  
   // if it not current enabled, enable it
-  if (darkMode !== "enabled") {
+  if (darkMode !== 'enabled') {
     enableDarkMode();
     sunmoonicon.src = "../assets/moon.svg";
     headerlogo.src = "../assets/RolupLogowhite.svg";
     aboutlogo.src = "../assets/RolupLogowhite.svg";
-    // if it has been enabled, turn it off
-  } else {
-    disableDarkMode();
+  // if it has been enabled, turn it off  
+  } else {  
+    disableDarkMode(); 
     sunmoonicon.src = "../assets/sun.svg";
     headerlogo.src = "../assets/RolupLogoblack.svg";
     aboutlogo.src = "../assets/RolupLogoblack.svg";
@@ -58,22 +59,22 @@ darkModeToggle.addEventListener("click", () => {
 // DARKMODE
 
 // CLIENTSLIDER
-if (window.innerWidth > 600) {
-  const slideContainer = document.querySelector(".clientsliderouterframe");
-  const slide = document.querySelector(".clientslider");
-  const nextBtn = document.getElementById("nextimgbtn");
-  const prevBtn = document.getElementById("previmgbtn");
+if (window.innerWidth > 600){
+  const slideContainer = document.querySelector('.clientsliderouterframe');
+  const slide = document.querySelector('.clientslider');
+  const nextBtn = document.getElementById('nextimgbtn');
+  const prevBtn = document.getElementById('previmgbtn');
   const interval = 5000;
 
-  let slides = document.querySelectorAll(".slide");
+  let slides = document.querySelectorAll('.slide');
   let index = 1;
   let slideId;
 
   const firstClone = slides[0].cloneNode(true);
   const lastClone = slides[slides.length - 1].cloneNode(true);
 
-  firstClone.id = "first-clone";
-  lastClone.id = "last-clone";
+  firstClone.id = 'first-clone';
+  lastClone.id = 'last-clone';
 
   slide.append(firstClone);
   slide.prepend(lastClone);
@@ -90,18 +91,18 @@ if (window.innerWidth > 600) {
     }, interval);
   };
 
-  const getSlides = () => document.querySelectorAll(".slide");
+  const getSlides = () => document.querySelectorAll('.slide');
 
-  slide.addEventListener("transitionend", () => {
+  slide.addEventListener('transitionend', () => {
     slides = getSlides();
     if (slides[index].id === firstClone.id) {
-      slide.style.transition = "none";
+      slide.style.transition = 'none';
       index = 1;
       slide.style.transform = `translateX(${-slideWidth * index}px)`;
     }
 
     if (slides[index].id === lastClone.id) {
-      slide.style.transition = "none";
+      slide.style.transition = 'none';
       index = slides.length - 2;
       slide.style.transform = `translateX(${-slideWidth * index}px)`;
     }
@@ -111,24 +112,24 @@ if (window.innerWidth > 600) {
     slides = getSlides();
     if (index >= slides.length - 1) return;
     index++;
-    slide.style.transition = ".7s ease-out";
+    slide.style.transition = '.7s ease-out';
     slide.style.transform = `translateX(${-slideWidth * index}px)`;
   };
 
   const moveToPreviousSlide = () => {
     if (index <= 0) return;
     index--;
-    slide.style.transition = ".7s ease-out";
+    slide.style.transition = '.7s ease-out';
     slide.style.transform = `translateX(${-slideWidth * index}px)`;
   };
 
-  slideContainer.addEventListener("mouseenter", () => {
+  slideContainer.addEventListener('mouseenter', () => {
     clearInterval(slideId);
   });
 
-  slideContainer.addEventListener("mouseleave", startSlide);
-  nextBtn.addEventListener("click", moveToNextSlide);
-  prevBtn.addEventListener("click", moveToPreviousSlide);
+  slideContainer.addEventListener('mouseleave', startSlide);
+  nextBtn.addEventListener('click', moveToNextSlide);
+  prevBtn.addEventListener('click', moveToPreviousSlide);
 
   startSlide();
 }
