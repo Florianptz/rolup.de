@@ -435,11 +435,14 @@ body {
   outline: none;
 }
 .contactinputs .wronginput {
-  background-color: #ff7474;
+  border-color: #ff5353 !important;
 }
 
 .contactinputs .errormessage {
-  color: red;
+  /* text */
+  font-size: 14px;
+  text-align: left;
+  color: #ff5353 !important;
   visibility: hidden;
 }
 
@@ -448,11 +451,16 @@ body {
 }
 
 .contactinputsright .wronginput {
-  background-color: #ff7474 !important;
+  border-color: #ff5353 !important;
 }
 
 .contactinputsright .errormessage {
-  color: red !important;
+  margin-left: 0px;
+  margin-top: -5px;
+  /* text */
+  font-size: 14px;
+  text-align: left;
+  color: #ff5353 !important;
   visibility: hidden !important;
 }
 
@@ -544,18 +552,6 @@ body {
 .fa-paper-plane {
   /* style */
   color: #ffffff;
-}
-.error-txt p {
-  /* text */
-  font-size: 14px;
-  text-align: left;
-  color: #ff5353;
-}
-.error-txt {
-  /* size */
-  width: 100%;
-  /* display */
-  display: none;
 }
 
 @media only screen and (max-width: 600px) {
