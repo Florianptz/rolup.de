@@ -67,6 +67,7 @@ body {
   font-weight: bolder;
 }
 .landingtext h3 {
+  width: 70%;
   /* text */
   color: var(--secondarytxt-clr);
   text-align: left;
@@ -578,6 +579,7 @@ body {
     font-size: 38px;
   }
   .landingtext h3 {
+    width: 100%;
     /* text */
     font-size: 18px;
     font-weight: 500;
