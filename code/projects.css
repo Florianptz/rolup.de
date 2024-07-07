@@ -166,6 +166,52 @@ body{
   transform: scale(1.02);
   transition: 0.2s;
 }
+.karatevideopopup{
+  position: absolute;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: none;
+}
+.karatevideopopup#bgblur.active{
+  filter: blur(10px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  pointer-events: none;
+  user-select: none;
+  display: block;
+}
+.vidcontainer{
+  visibility: hidden;
+  display: flex;
+  aspect-ratio: 16/9;
+  width: 70%;
+  object-fit: contain;
+  position: absolute;
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.vidcontainer.active{
+  visibility: visible;
+  transition: 0.5s;
+  transform: translate(-50%, -45%);
+}
+.closebtn{
+  width: fit-content;
+  height: fit-content;
+  margin: 0px;
+  margin-left: 10px;
+  font-size: 30px;
+  color: var(--primarytxt-clr);
+  border-radius: 5px;
+}
 
 .karatelogo{
   /* sizing */
