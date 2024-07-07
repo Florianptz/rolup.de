@@ -416,6 +416,17 @@ body{
     /* positioning */
     margin-top: 20px;
   }
+  .karatewerbevideo{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+  }
+  .vidcontainer{
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    width: 90%;
+    height: fit-content;
+  }
 
   .imagesliderframe{
     /* size */
