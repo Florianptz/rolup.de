@@ -323,7 +323,8 @@ body {
   /* positioning */
   margin: auto 0px auto 0px;
 }
-.slidetxt h1, h3 {
+.slidetxt h1,
+h3 {
   /* text */
   text-align: left;
   color: #fff;
@@ -552,6 +553,54 @@ body {
 .fa-paper-plane {
   /* style */
   color: #ffffff;
+}
+
+#success-message {
+  width: 35%;
+  height: 40%;
+  border-radius: 20px;
+  box-shadow: 5px 7px 15px 10px #a6a6a640;
+  background-color: #dfdfdf;
+  position: absolute;
+  left: 30%;
+  z-index: 10;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.success-message-close-button {
+  font-size: 25px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  text-align: right;
+}
+
+.success-message-close-button i {
+  color: #000;
+  cursor: pointer;
+}
+
+.success-message-text {
+  font-size: 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+}
+
+.success-message-text h3 {
+  color: #000;
+}
+
+.success-message-text img {
+  position: relative;
+  top: 10px;
 }
 
 @media only screen and (max-width: 600px) {

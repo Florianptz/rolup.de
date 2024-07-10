@@ -41,19 +41,22 @@
                     document.getElementById("firstname").classList.remove("wronginput");
                     //validate message
                     if (document.getElementById("message").value.length != 0) {
+                      emailjs.sendForm('service_wfpj3e9', 'template_jiutois', this)
+                      .then(() => {
+                        console.log('SUCCESS!');
+                      }, (error) => {
+                        console.log('FAILED...', error);
+                      });
+                      document.getElementById("success-message").style.visibility = "visible";
                       document.getElementById("errorinfo").classList.remove("errormessage-visible");
                       document.getElementById("message").classList.remove("wronginput");
+                      //clear values in inputs
                       document.getElementById("message").value = "";
                       document.getElementById("firstname").value = "";
                       document.getElementById("lastname").value = "";
                       document.getElementById("emailinput").value = "";
+                      document.getElementById("phonenumber").value = "";
                       document.getElementById("sendbutton").innerHTML = "gesendet!";
-                    //   emailjs.sendForm('service_wfpj3e9', 'template_jiutois', this)
-                    // .then(() => {
-                    //     console.log('SUCCESS!');
-                    // }, (error) => {
-                    //     console.log('FAILED...', error);
-                    // });
                     } else {
                       document.getElementById("errorinfo").classList.add("errormessage-visible");
                       document.getElementById("message").classList.add("wronginput");
@@ -208,7 +211,20 @@
           <p id="Datenschutzhinweis">Durch das Abschicken stimmen Sie der <a href="./code/privacypolicy.html" style="text-decoration: underline;">Datenschutzerklärung</a> zu.</p>
           <button onclick="sendMail()" type="submit" class="button sendbutton">senden <i class="fa-regular fa-paper-plane"></i></button>
         </div>
-        
+        <div id="success-message">
+          <div class="success-message-close-button">
+            <i onclick="closeMessage()" class="fa-solid fa-x"></i>
+            <script>
+              function closeMessage(){
+                document.getElementById("success-message").style.visibility = "hidden";
+              }
+            </script>
+          </div>
+          <div class="success-message-text">
+            <h3>Die Nachricht wurde erfolgreich versendet.</h3>
+            <h3>Vielen Dank für Dein Vertrauen!</h3>
+          </div>
+        </div>
       </form>
     </div>
 
