@@ -246,7 +246,6 @@ body {
   margin: 0px auto;
   /* content alignment */
   display: flex;
-  gap: 50px;
 }
 .slidercontrols {
   /* size */
