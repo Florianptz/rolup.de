@@ -57,9 +57,30 @@ body {
 
 .subheader {
   width: 100%;
-  height: 445px;
+  height: fit-content;
   background-color: #000;
   background: linear-gradient(180deg, #ffffff 0%, #ffffff 76%, #d8d8d8 98%);
+}
+
+.subheader-content{
+  width: 100%;
+  height: fit-content;
+  max-height: 500px;
+  padding: 0px;
+  overflow-y: hidden;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.subheader-content img{
+  object-fit: contain;
+  width: 100%;
+  min-width: 100%;
+  vertical-align: middle;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .subheadingtxt {
@@ -141,8 +162,10 @@ body {
   align-items: center;
   overflow: hidden;
   margin: 0px auto;
-
-  border: 1px solid red;
+}
+.profilepic img{
+  object-fit: contain;
+  width: 100%;
 }
 
 .personalcardtxt {
@@ -251,10 +274,14 @@ p {
   color: var(--primarytxt-clr);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px){
+  header{
+    box-shadow: none;
+  }
+  
   .subheader {
     width: 100%;
-    height: 156px;
+    height: 170px;
   }
   .subheader-content {
     height: 100%;
@@ -262,13 +289,13 @@ p {
     display: flex;
     position: relative;
   }
-  .subheader-content img {
-    object-fit: contain;
+  .subheader-content img{
+    object-fit: contain; 
     height: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -45%);
   }
 
   .subheadingtxt {
